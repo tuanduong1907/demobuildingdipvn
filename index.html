@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cổng thông tin giao tiếp khách hàng</title>
+    <link rel="shortcut icon" href="https://demobuilding.dip.vn/DL/img/logo-ico-dip.png">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
+</head>
+
+<body>
+    <div class="main">
+        <!-- HEADER SECTION -->
+        <header class="header">
+            <div class="grid">
+
+                <!-- Nav PC -->
+                <div class="navbar hidden-pc"> 
+                    <a href="" class="navbar__logo-wrap hidden-pc">
+                        <img src="./assets/images/logo-dip-1.png" alt="" class="navbar__logo-img">
+                        <span id="type1"></span>
+                    </a>
+                    <ul class="navbar__menu-list">
+                        <li class="navbar__menu-item navbar__menu-item--actived">
+                            <a href="" class="navbar__menu-item-link">
+                                Trang chủ
+                            </a>
+                        </li>
+                        <li class="navbar__menu-item">
+                            <a href="./hoadon.html" class="navbar__menu-item-link">Hóa đơn</a>
+                        </li>
+                        <li class="navbar__menu-item">
+                            <a href="" class="navbar__menu-item-link">Công nợ</a>
+                        </li>
+                        <li class="navbar__menu-item">
+                            <a href="#" class="navbar__menu-item-link">
+                                Biểu đồ
+                                <i class="navbar__menu-item-icon fas fa-chevron-down"></i>
+                            </a>
+                            <ul class="navbar__sub-menu-list">
+                                <li class="navbar__sub-menu-item">
+                                    <a href="" class="navbar__sub-menu-link">
+                                        <i class="navbar__sub-menu-icon fas fa-lightbulb"></i>
+                                        Chỉ số tiêu thụ diện
+                                    </a>
+                                </li>
+                                <li class="navbar__sub-menu-item">
+                                    <a href="" class="navbar__sub-menu-link">
+                                        <i class="navbar__sub-menu-icon fas fa-tint"></i>
+                                        Chỉ số tiêu nước
+                                    </a>
+                                </li>
+                                <li class="navbar__sub-menu-item">
+                                    <a href="" class="navbar__sub-menu-link">
+                                        <i class="navbar__sub-menu-icon fas fa-address-book"></i>
+                                        Thống kê số lượng xe
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navbar__menu-item">
+                            <a href="" class="navbar__menu-item-link">Phản hồi</a>
+                        </li>
+                        <li class="navbar__menu-item">
+                            <a href="" class="navbar__menu-item-link">Liên hệ</a>
+                        </li>
+                    </ul>
+                    <div class="navbar__setting" id="menu" onclick="handleMenu(event)">
+                        <i class="navbar__setting-icon fas fa-user"></i>
+                        <ul class="navbar__setting-list" id="show-sub-menu">
+                            <li class="navbar__setting-item">
+                                <a href="" class="navbar__setting-link">
+                                    <i class="navbar__setting-item-icon fas fa-globe-asia"></i>
+                                    Chọn ngôn ngữ
+                                    <i class="navbar__setting-item-icon-icon-right fas fa-angle-right"></i>
+                                </a>
+                                <ul class="navbar__setting-languages">
+                                    <li class="navbar__setting-languages-item">
+                                        <i class="fas fa-caret-right"></i>
+                                        <span>Tiếng Việt</span>
+                                        <i class="fas fa-caret-left"></i>
+                                    </li>
+                                    <li class="navbar__setting-languages-item">
+                                        <span> English </span>
+                                    </li>
+                                    <li class="navbar__setting-languages-item">
+                                        <span> Korean </span>
+                                    </li>
+                                    <li class="navbar__setting-languages-item">
+                                        <span> Japanese </span>
+                                    </li>
+                                    <li class="navbar__setting-languages-item">
+                                        <span> Chinese </span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="navbar__setting-item">
+                                <a href="#" class="navbar__setting-link">
+                                    <i class="navbar__setting-item-icon fas fa-key"></i>
+                                    Đổi mật khẩu
+                                </a>
+                            </li>
+                            <li class="navbar__setting-item">
+                                <a href="" class="navbar__setting-link">
+                                    <i class="navbar__setting-item-icon fas fa-sign-out-alt"></i>
+                                    Đăng xuất
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                
+                <label for="navbar__mobile-input" class="navbar__bar-btn show-mobile">
+                    <i class="navbar__bar-icon fas fa-bars"></i>
+                </label>
+            </div>
+            <input type="checkbox" name="" class="nav-input" id="navbar__mobile-input" hidden>
+            <label for="navbar__mobile-input" class="navbar__overlay"></label>
+            
+            
+            <!-- Nav Mobile -->
+            <a href="#" class="navbar__mobile-logo-name show-mobile">DIP VIETNAM</a>
+
+            <div class="navbar__mobile">
+                <label for="navbar__mobile-input" class="navbar__mobile-close">
+                    <i class="navbar__mobile-close-icon fas fa-times"></i>
+                </label>
+                <ul class="navbar__mobile-menu-list">
+                    <li class="navbar__mobile-menu-item navbar__mobile-menu-item--actived">
+                        <a href="./home.html" class="navbar__mobile-menu-item-link">
+                            Trang chủ
+                            <i class="navbar__mobile-menu-icon fas fa-home"></i>
+                        </a>
+                    </li>
+                    <li class="navbar__mobile-menu-item">
+                        <a href="./hoadon.html" class="navbar__mobile-menu-item-link">Hóa đơn</a>
+                    </li>
+                    <li class="navbar__mobile-menu-item">
+                        <a href="" class="navbar__mobile-menu-item-link">Công nợ</a>
+                    </li>
+                    <li class="navbar__mobile-menu-item" onclick="handleMenuMobile(event)">
+                        <a href="#" class="navbar__mobile-menu-item-link">
+                            Biểu đồ
+                            <i class="navbar__mobile-menu-item-icon fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="navbar__mobile-sub-menu-list" id="show-sub-menu-moble">
+                            <li class="navbar__mobile-sub-menu-item">
+                                <a href="" class="navbar__mobile-sub-menu-link">
+                                    Chỉ số tiêu thụ diện
+                                    <i class="navbar__mobile-sub-menu-icon fas fa-lightbulb"></i>
+                                </a>
+                            </li>
+                            <li class="navbar__mobile-sub-menu-item">
+                                <a href="" class="navbar__mobile-sub-menu-link">
+                                    Chỉ số tiêu nước
+                                    <i class="navbar__mobile-sub-menu-icon fas fa-tint"></i>
+                                </a>
+                            </li>
+                            <li class="navbar__mobile-sub-menu-item">
+                                <a href="" class="navbar__mobile-sub-menu-link">
+                                    Thống kê số lượng xe
+                                    <i class="navbar__mobile-sub-menu-icon fas fa-address-book"></i>
+
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navbar__mobile-menu-item">
+                        <a href="" class="navbar__mobile-menu-item-link">Phản hồi</a>
+                    </li>
+                    <li class="navbar__mobile-menu-item">
+                        <a href="" class="navbar__mobile-menu-item-link">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </header>
+
+        <!-- Support -->
+        <div class="phone-support-swap">
+            <a href="tel:02871069079" class="phone-support">
+                <i class="phone-support__icon fas fa-phone"></i>
+            </a>
+            <div class="phone-support-number">
+                <span> 028 7106 9079 </span>
+            </div>
+        </div>
+
+        <!-- SLIDER SECTION -->
+        <div class="slider">
+            <img src="./assets/images/logo_dip-2.png" alt="" class="slider__img">
+            <div class="slider__content-wrap">
+                <h1 class="slider__name">DIP VIETNAM</h1>
+                <h3 class="slider__tittle">BUSINESS SOFTWARE</h3>
+            </div>
+        </div>
+
+        <!-- CONTAINER SECTION -->
+        <div class="container">
+            <div class="grid">
+                <!-- News Slider Section -->
+                <div class="container__item-wrap hidden-pc">
+                    <h2 class="container__heading">Tin Tức Mới Nhất</h2>
+                    <i class="fas fa-arrow-left prev-icon"></i>
+                    <i class="fas fa-arrow-right next-icon"></i>
+                    <div class="container__news-slider-list">
+                        <div class="container__news-slider-item">
+                            <a href="" class="container__news-slider-item-wrap">
+                                <div class="container__news-slider-item-img-wrap">
+                                    <img src="https://dip.vn/Content/Images/%E1%BA%A2nh%201%20(7).jpg" alt="" class="container__news-slider-item-img">
+                                </div>
+                                <div class="container__news-slider-info">
+                                    <h4 class="container__news-slider-heading">
+                                        Hoàng Quân và hành trình thành công khi đồng hành cùng DIP Việt Nam
+                                    </h4>
+                                    <p class="container__news-slider-content">
+                                        Là một trong những tập đoàn Bất động sản – Giáo dục- Tài chính hàng đầu trong nước. Sự thành công của tập đoàn Hoàng Quân luôn gắn liền với các chiến lực kinh doanh đúng đắn cùng những giải pháp quản lý khoa học và thông minh.
+                                    </p>
+                                    <div class="container__news-slider-info-footer">
+                                        <span class="container__news-slider-info-day">
+                                            <i class="container__news-slider-info-day-icon far fa-calendar-alt"></i>
+                                            25-11-2021
+                                        </span>
+                                        <span class="container__news-slider-info-view">
+                                            <i class="container__news-slider-info-view-icon fas fa-chevron-right"></i>
+                                            Xem thêm
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="container__news-slider-item">
+                            <a href="" class="container__news-slider-item-wrap">
+                                <div class="container__news-slider-item-img-wrap">
+                                    <img src="https://dip.vn/Content/Images/5-tieu-chi-chon-don-vi-phan-mem-quan-ly-toa-nha-tot-2.jpg" alt="" class="container__news-slider-item-img">
+                                </div>
+                                <div class="container__news-slider-info">
+                                    <h4 class="container__news-slider-heading">
+                                        4 tiêu chí để lựa chọn đơn vị triển khai phần mềm quản lý tòa nhà phù hợp
+                                    </h4>
+                                    <p class="container__news-slider-content">
+                                        Việc ứng dụng phần mềm vào quản lý tòa nhà đang là xu thế quản lý tất yếu hiện nay. Nhất là khi nhu cầu môi trường sống của người dân tăng cao, yêu cầu chất lượng dịch vụ quản lý vận hành tòa nhà ngày càng nghiêm ngặt.
+                                    </p>
+                                    <div class="container__news-slider-info-footer">
+                                        <span class="container__news-slider-info-day">
+                                            <i class="container__news-slider-info-day-icon far fa-calendar-alt"></i>
+                                            1-11-2021
+                                        </span>
+                                        <span class="container__news-slider-info-view">
+                                            <i class="container__news-slider-info-view-icon fas fa-chevron-right"></i>
+                                            Xem thêm
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="container__news-slider-item">
+                            <a href="" class="container__news-slider-item-wrap">
+                                <div class="container__news-slider-item-img-wrap">
+                                    <img src="https://dip.vn/Content/Images/tai-sao-chu-dau-tu-can-chon-don-vi-phat-trien-phan-mem-quan-ly-du-an-tot-2.jpg" alt="" class="container__news-slider-item-img">
+                                </div>
+                                <div class="container__news-slider-info">
+                                    <h4 class="container__news-slider-heading">
+                                        Tại sao chủ đầu tư cần lựa chọn đơn vị phát triển phần mềm quản lý kinh doanh bất động sản uy tín?
+                                    </h4>
+                                    <p class="container__news-slider-content">
+                                        Sau thời gian dài ảnh hưởng bởi dịch Covid-19, giờ đây thị trường bất động sản đã dần có dấu hiệu khởi động lại tiềm lực phát triển của mình. Lúc này hầu hết các sàn giao dịch bất động sản đã hoạt động trở lại với kế hoạch kinh doanh cùng phương thức kinh doanh mới.
+                                    </p>
+                                    <div class="container__news-slider-info-footer">
+                                        <span class="container__news-slider-info-day">
+                                            <i class="container__news-slider-info-day-icon far fa-calendar-alt"></i>
+                                            1-11-2021
+                                        </span>
+                                        <span class="container__news-slider-info-view">
+                                            <i class="container__news-slider-info-view-icon fas fa-chevron-right"></i>
+                                            Xem thêm
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="container__news-slider-item">
+                            <a href="" class="container__news-slider-item-wrap">
+                                <div class="container__news-slider-item-img-wrap">
+                                    <img src="https://dip.vn/Content/Images/app-my-home-vime-1.jpg" alt="" class="container__news-slider-item-img">
+                                </div>
+                                <div class="container__news-slider-info">
+                                    <h4 class="container__news-slider-heading">
+                                        App My Home Vime – Giải pháp quản lý tòa nhà tiện dụng và hiện đại qua điện thoại di động
+                                    </h4>
+                                    <p class="container__news-slider-content">
+                                        Để tăng cường tiện lợi khi quản lý chung cư cũng như chăm sóc cư dân và khách hàng hiệu quả hơn, DIP Việt Nam đã phát triển ứng dụng App My Home Vime trên nền tảng di động tích hợp với phần mềm quản lý tòa nhà Landsoft Control.
+                                    </p>
+                                    <div class="container__news-slider-info-footer">
+                                        <span class="container__news-slider-info-day">
+                                            <i class="container__news-slider-info-day-icon far fa-calendar-alt"></i>
+                                            25-10-2021
+                                        </span>
+                                        <span class="container__news-slider-info-view">
+                                            <i class="container__news-slider-info-view-icon fas fa-chevron-right"></i>
+                                            Xem thêm
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="container__news-slider-item">
+                            <a href="" class="container__news-slider-item-wrap">
+                                <div class="container__news-slider-item-img-wrap">
+                                    <img src="https://dip.vn/Content/Images/Nang-cap-phu-luc-3.jpg" alt="" class="container__news-slider-item-img">
+                                </div>
+                                <div class="container__news-slider-info">
+                                    <h4 class="container__news-slider-heading">
+                                        TNR Holdings và hành trình số hóa mang lại thành công vượt trội khi dùng phần mềm Landsoft
+                                    </h4>
+                                    <p class="container__news-slider-content">
+                                        Là một trong những doanh nghiệp uy tín hàng đầu trên lĩnh vực đầu tư phát triển và quản lý các dự án bất động sản, TNR Holdings luôn đi đâu trong việc chuyển đổi số để nắm bắt xu thế thị trường, đổi mới hình thức kinh doanh cũng như tạo dựng bước đệm vững chãi cho doanh nghiệp phát triển.
+                                    </p>
+                                    <div class="container__news-slider-info-footer">
+                                        <span class="container__news-slider-info-day">
+                                            <i class="container__news-slider-info-day-icon far fa-calendar-alt"></i>
+                                            15-10-2021
+                                        </span>
+                                        <span class="container__news-slider-info-view">
+                                            <i class="container__news-slider-info-view-icon fas fa-chevron-right"></i>
+                                            Xem thêm
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News Section -->
+                <div class="container__item-wrap hidden show-mobile ">
+                    <h2 class="container__heading">Tin Tức Mới Nhất</h2>
+                    <ul class="container__news-list"></ul>
+                </div>
+                <!-- Chart Section -->
+                <div class="container__item-wrap reveal">
+                    <h2 class="container__heading">Hóa Đơn Của Bạn</h2>
+                    <div class="container__table-data">
+                        <header class="container__table-data-header">
+                            <ul class="container__table-data-header-list">
+                                <li class="container__table-data-header-item">
+                                    <div class="container__table-data-header-name">
+                                        <input type="checkbox" name="" id="container__table-data-header-checkbox" >
+                                    </div>
+                                    <div class="container__table-data-header-search hidden-pc-tablet">
+                                        <i class="container__table-data-header-search-icon fas fa-search"></i>
+                                        <input type="text" name="" placeholder="Tìm kiếm" class="container__table-data-header-search-input">
+                                    </div>
+                                </li>
+                                <li class="container__table-data-header-item">
+                                    <span class="container__table-data-header-name">Loại phí</span>
+                                    <div class="container__table-data-header-search hidden-pc-tablet">
+                                        <i class="container__table-data-header-search-icon fas fa-search"></i>
+                                        <input type="text" name="" placeholder="Tìm kiếm" class="container__table-data-header-search-input">
+                                    </div>
+                                </li>
+                                <li class="container__table-data-header-item">
+                                    <span class="container__table-data-header-name">Diễn giải</span>
+                                    <div class="container__table-data-header-search hidden-pc-tablet">
+                                        <i class="container__table-data-header-search-icon fas fa-search"></i>
+                                        <input type="text" name="" placeholder="Tìm kiếm" class="container__table-data-header-search-input">
+                                    </div>
+                                </li>
+                                <li class="container__table-data-header-item">
+                                    <span class="container__table-data-header-name">Trạng thái</span>
+                                    <div class="container__table-data-header-search hidden-pc-tablet">
+                                        <i class="container__table-data-header-search-icon fas fa-search"></i>
+                                        <input type="text" name="" placeholder="Tìm kiếm" class="container__table-data-header-search-input">
+                                    </div>
+                                </li>
+                                <li class="container__table-data-header-item">
+                                    <span class="container__table-data-header-name">Số tiền</span>
+                                    <div class="container__table-data-header-search hidden-pc-tablet">
+                                        <i class="container__table-data-header-search-icon fas fa-search"></i>
+                                        <input type="text" name="" placeholder="Tìm kiếm" class="container__table-data-header-search-input">
+                                    </div>
+                                </li>
+                            </ul>
+                        </header>
+                        <div class="container__table-data-body">
+                            <span>Không có dữ liệu</span>
+                        </div>
+                        <footer class="container__table-data-footer">
+                            <span class="container__table-data-total">Tổng thanh toán: </span><span class="container__table-data-total-number">0 đ</span>
+                        </footer>
+                    </div>
+                    <div class="btn-data-table-wrap">
+                        <button class="btn btn-data-table">
+                            <a href="./hoadon.html" class="data-table__view">
+                                Xem chi tiết
+                            </a>
+                        </button>
+                        <button onclick="handleMenuPay(event)" class="btn btn-data-table">
+                            Thanh toán <i class="navbar__menu-item-icon fas fa-chevron-down"></i>
+                            <ul class="pay-list">
+                                <li class="pay-item">
+                                    <a href="#" class="pay-item-link">
+                                        <img src="./assets/images/Logo-VNPAY-QR.png" alt="" class="pay-item-img">
+                                    </a>
+                                    <div class="pay-item-des">
+                                        <span>Thanh toán hóa đơn qua VNPay</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Chart Section -->
+                <div class="container__item-wrap reveal">
+                    <h2 class="container__heading">Biểu Đồ Điện Nước</h2>
+                    <div class="container__chart-wrap">
+                        <div class="container__chart">
+                            <canvas id="chart-item"></canvas>
+                        </div>
+                        <div class="container__chart">
+                            <canvas id="chart-item-2"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Comment Section -->
+                <div class="container__item-wrap reveal">
+                    <h2 class="container__heading">Phản Ánh Cư Dân</h2>
+                    <div class="container__comment-section">
+                        <div class="container__comment-wrap">
+                            <input type="text" name="" id="" placeholder="Tiêu đề" class="container__comment-title">
+                            <textarea name="" id=""  class="container__comment-Content" onkeyup="chartCount()" maxlength="500" placeholder="Nội dung"></textarea>
+                            <p class="container__comment-Content-count">0/500 (Kí tự tối đa)</p>
+                            <div id="display_image"></div>
+
+                            <div class="container__comment-btn-wrap">
+                                <input type="file" id="image_input" accept="image/png, image/jpeg, image/jpg" hidden>
+                                <button onclick="UploadImgActive()" class="btn container__comment-btn-item" id="upload-img-btn">
+                                    <i class="far container__comment-icon fa-images"></i>
+                                    <span>Thêm ảnh</span>
+                                </button>
+                                <button class="btn container__comment-btn-item">
+                                    <span>Gửi</span>
+                                </button>
+                            </div>
+                            <p class="container__comment-des">
+                                Tổng dung lượng ảnh tối đa có thể upload là 15MB
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+
+        <!-- FOOTER SECTION -->
+        <footer class="footer">
+                <div class="footer-wrap">
+                    <div class="footer__item">
+                        <img src="./assets/images/logo-dip-1.png" alt="" class="footer__logo">
+                    </div>
+                    <div class="footer__item">
+                        <h4 class="footer__item-heading">Văn Phòng DIP Miền Trung</h4>
+                        <ul class="footer__address-list">
+                            <li class="footer__address-item">
+                                <i class="footer__address-icon fas fa-map-marker-alt"></i>
+                                <span class="footer__address-text">
+                                    Địa chỉ: Tầng 9, Tòa nhà VCN Tower, 02 Đường Tố Hữu, Phường Phước Hải, TP Nha Trang, Tỉnh Khánh Hòa
+                                </span>
+                            </li>
+                            <li class="footer__address-item">
+                                <i class="footer__address-icon fas fa-phone"></i>
+                                <span class="footer__address-text">
+                                    Điện thoại: (028) 7106 9079
+                                </span>
+                            </li>
+                            <li class="footer__address-item">
+                                <i class="footer__address-icon fas fa-envelope"></i>
+                                <span class="footer__address-text">
+                                    Email: sales@dip.vn
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__item">
+                        <h4 class="footer__item-heading">Mạng Xã Hội</h4>
+                        <div class="footer__social-list">
+                            <div class="footer__social-list-item-wrap">
+                                <a href="" class="footer__social-item">
+                                    <i class="footer__social-icon footer__social-icon-fb fab fa-facebook"></i>
+                                </a>
+                            </div>
+                            <div class="footer__social-list-item-wrap">
+                                <a href="" class="footer__social-item">                                
+                                    <svg class="footer__social-icon-svg" id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460.1 436.6" width="2500" height="2372"><style>.st0{fill:#fdfefe}.st1{fill:#0180c7}.st2{fill:#0172b1}.st3{fill:none;stroke:#0180c7;stroke-width:2;stroke-miterlimit:10}</style><title>logo-zalo-vector</title><path class="st0" d="M82.6 380.9c-1.8-.8-3.1-1.7-1-3.5 1.3-1 2.7-1.9 4.1-2.8 13.1-8.5 25.4-17.8 33.5-31.5 6.8-11.4 5.7-18.1-2.8-26.5C69 269.2 48.2 212.5 58.6 145.5 64.5 107.7 81.8 75 107 46.6c15.2-17.2 33.3-31.1 53.1-42.7 1.2-.7 2.9-.9 3.1-2.7-.4-1-1.1-.7-1.7-.7-33.7 0-67.4-.7-101 .2C28.3 1.7.5 26.6.6 62.3c.2 104.3 0 208.6 0 313 0 32.4 24.7 59.5 57 60.7 27.3 1.1 54.6.2 82 .1 2 .1 4 .2 6 .2H290c36 0 72 .2 108 0 33.4 0 60.5-27 60.5-60.3v-.6-58.5c0-1.4.5-2.9-.4-4.4-1.8.1-2.5 1.6-3.5 2.6-19.4 19.5-42.3 35.2-67.4 46.3-61.5 27.1-124.1 29-187.6 7.2-5.5-2-11.5-2.2-17.2-.8-8.4 2.1-16.7 4.6-25 7.1-24.4 7.6-49.3 11-74.8 6zm72.5-168.5c1.7-2.2 2.6-3.5 3.6-4.8 13.1-16.6 26.2-33.2 39.3-49.9 3.8-4.8 7.6-9.7 10-15.5 2.8-6.6-.2-12.8-7-15.2-3-.9-6.2-1.3-9.4-1.1-17.8-.1-35.7-.1-53.5 0-2.5 0-5 .3-7.4.9-5.6 1.4-9 7.1-7.6 12.8 1 3.8 4 6.8 7.8 7.7 2.4.6 4.9.9 7.4.8 10.8.1 21.7 0 32.5.1 1.2 0 2.7-.8 3.6 1-.9 1.2-1.8 2.4-2.7 3.5-15.5 19.6-30.9 39.3-46.4 58.9-3.8 4.9-5.8 10.3-3 16.3s8.5 7.1 14.3 7.5c4.6.3 9.3.1 14 .1 16.2 0 32.3.1 48.5-.1 8.6-.1 13.2-5.3 12.3-13.3-.7-6.3-5-9.6-13-9.7-14.1-.1-28.2 0-43.3 0zm116-52.6c-12.5-10.9-26.3-11.6-39.8-3.6-16.4 9.6-22.4 25.3-20.4 43.5 1.9 17 9.3 30.9 27.1 36.6 11.1 3.6 21.4 2.3 30.5-5.1 2.4-1.9 3.1-1.5 4.8.6 3.3 4.2 9 5.8 14 3.9 5-1.5 8.3-6.1 8.3-11.3.1-20 .2-40 0-60-.1-8-7.6-13.1-15.4-11.5-4.3.9-6.7 3.8-9.1 6.9zm69.3 37.1c-.4 25 20.3 43.9 46.3 41.3 23.9-2.4 39.4-20.3 38.6-45.6-.8-25-19.4-42.1-44.9-41.3-23.9.7-40.8 19.9-40 45.6zm-8.8-19.9c0-15.7.1-31.3 0-47 0-8-5.1-13-12.7-12.9-7.4.1-12.3 5.1-12.4 12.8-.1 4.7 0 9.3 0 14v79.5c0 6.2 3.8 11.6 8.8 12.9 6.9 1.9 14-2.2 15.8-9.1.3-1.2.5-2.4.4-3.7.2-15.5.1-31 .1-46.5z"/><path class="st1" d="M139.5 436.2c-27.3 0-54.7.9-82-.1-32.3-1.3-57-28.4-57-60.7 0-104.3.2-208.6 0-313C.5 26.7 28.4 1.8 60.5.9c33.6-.9 67.3-.2 101-.2.6 0 1.4-.3 1.7.7-.2 1.8-2 2-3.1 2.7-19.8 11.6-37.9 25.5-53.1 42.7-25.1 28.4-42.5 61-48.4 98.9-10.4 66.9 10.5 123.7 57.8 171.1 8.4 8.5 9.5 15.1 2.8 26.5-8.1 13.7-20.4 23-33.5 31.5-1.4.8-2.8 1.8-4.2 2.7-2.1 1.8-.8 2.7 1 3.5.4.9.9 1.7 1.5 2.5 11.5 10.2 22.4 21.1 33.7 31.5 5.3 4.9 10.6 10 15.7 15.1 2.1 1.9 5.6 2.5 6.1 6.1z"/><path class="st2" d="M139.5 436.2c-.5-3.5-4-4.1-6.1-6.2-5.1-5.2-10.4-10.2-15.7-15.1-11.3-10.4-22.2-21.3-33.7-31.5-.6-.8-1.1-1.6-1.5-2.5 25.5 5 50.4 1.6 74.9-5.9 8.3-2.5 16.6-5 25-7.1 5.7-1.5 11.7-1.2 17.2.8 63.4 21.8 126 19.8 187.6-7.2 25.1-11.1 48-26.7 67.4-46.2 1-1 1.7-2.5 3.5-2.6.9 1.4.4 2.9.4 4.4v58.5c.2 33.4-26.6 60.6-60 60.9h-.5c-36 .2-72 0-108 0H145.5c-2-.2-4-.3-6-.3z"/><path class="st1" d="M155.1 212.4c15.1 0 29.3-.1 43.4 0 7.9.1 12.2 3.4 13 9.7.9 7.9-3.7 13.2-12.3 13.3-16.2.2-32.3.1-48.5.1-4.7 0-9.3.2-14-.1-5.8-.3-11.5-1.5-14.3-7.5s-.8-11.4 3-16.3c15.4-19.6 30.9-39.3 46.4-58.9.9-1.2 1.8-2.4 2.7-3.5-1-1.7-2.4-.9-3.6-1-10.8-.1-21.7 0-32.5-.1-2.5 0-5-.3-7.4-.8-5.7-1.3-9.2-7-7.9-12.6.9-3.8 3.9-6.9 7.7-7.8 2.4-.6 4.9-.9 7.4-.9 17.8-.1 35.7-.1 53.5 0 3.2-.1 6.3.3 9.4 1.1 6.8 2.3 9.7 8.6 7 15.2-2.4 5.7-6.2 10.6-10 15.5-13.1 16.7-26.2 33.3-39.3 49.8-1.1 1.3-2.1 2.6-3.7 4.8z"/><path class="st1" d="M271.1 159.8c2.4-3.1 4.9-6 9-6.8 7.9-1.6 15.3 3.5 15.4 11.5.3 20 .2 40 0 60 0 5.2-3.4 9.8-8.3 11.3-5 1.9-10.7.4-14-3.9-1.7-2.1-2.4-2.5-4.8-.6-9.1 7.4-19.4 8.7-30.5 5.1-17.8-5.8-25.1-19.7-27.1-36.6-2.1-18.3 4-33.9 20.4-43.5 13.6-8.1 27.4-7.4 39.9 3.5zm-35.4 36.5c.2 4.4 1.6 8.6 4.2 12.1 5.4 7.2 15.7 8.7 23 3.3 1.2-.9 2.3-2 3.3-3.3 5.6-7.6 5.6-20.1 0-27.7-2.8-3.9-7.2-6.2-11.9-6.3-11-.7-18.7 7.8-18.6 21.9zM340.4 196.9c-.8-25.7 16.1-44.9 40.1-45.6 25.5-.8 44.1 16.3 44.9 41.3.8 25.3-14.7 43.2-38.6 45.6-26.1 2.6-46.8-16.3-46.4-41.3zm25.1-2.4c-.2 5 1.3 9.9 4.3 14 5.5 7.2 15.8 8.6 23 3 1.1-.8 2-1.8 2.9-2.8 5.8-7.6 5.8-20.4.1-28-2.8-3.8-7.2-6.2-11.9-6.3-10.8-.6-18.4 7.6-18.4 20.1zM331.6 177c0 15.5.1 31 0 46.5.1 7.1-5.5 13-12.6 13.2-1.2 0-2.5-.1-3.7-.4-5-1.3-8.8-6.6-8.8-12.9v-79.5c0-4.7-.1-9.3 0-14 .1-7.7 5-12.7 12.4-12.7 7.6-.1 12.7 4.9 12.7 12.9.1 15.6 0 31.3 0 46.9z"/><path class="st0" d="M235.7 196.3c-.1-14.1 7.6-22.6 18.5-22 4.7.2 9.1 2.5 11.9 6.4 5.6 7.5 5.6 20.1 0 27.7-5.4 7.2-15.7 8.7-23 3.3-1.2-.9-2.3-2-3.3-3.3-2.5-3.5-3.9-7.7-4.1-12.1zM365.5 194.5c0-12.4 7.6-20.7 18.4-20.1 4.7.1 9.1 2.5 11.9 6.3 5.7 7.6 5.7 20.5-.1 28-5.6 7.1-16 8.3-23.1 2.7-1.1-.8-2-1.8-2.8-2.9-3-4.1-4.4-9-4.3-14z"/><path class="st3" d="M66 1h328.1c35.9 0 65 29.1 65 65v303c0 35.9-29.1 65-65 65H66c-35.9 0-65-29.1-65-65V66C1 30.1 30.1 1 66 1z"/></svg>
+                                </a>
+                            </div>
+                            <div class="footer__social-list-item-wrap">                                
+                                <a href="" class="footer__social-item">
+                                    <i class="footer__social-icon footer__social-icon-yt fab fa-youtube"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                   <span> © Copyright 2021  by <a href="">DIP VIETNAM</a></span>
+                </div>
+        </footer>
+    </div>
+    
+     <!-- Messenger Plugin chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+    <!-- Type It -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/7.0.4/typeit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script>
+    <script type="text/javascript" src="./assets/jquery/jquery-min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.2/dist/chart.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/home.js"></script>
+</body>
+
+</html>
