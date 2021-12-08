@@ -1,0 +1,117 @@
+.container__contact-heading{
+    font-size: 2.6rem;
+    line-height: 1.4;
+    margin-top: 30px;
+    text-align: center;
+    color: var(--heading-color);
+}
+.container__contact-heading-icon{
+    margin-right: 4px;
+}
+
+.container__contact-info{
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.container__contact-info-item{
+    width: 33.3333%;
+    text-align: center;
+
+}
+
+.container__contact-info-icon-wrap{
+    width: 50px;
+    height: 50px;
+    border-radius:50%;
+    background-color: rgba(36, 133, 208, .7);
+    margin: auto;
+    display: flex;
+    cursor: pointer;
+    transition: ease .2s;
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+}
+
+.container__contact-info-icon-wrap:hover{
+    background-color: rgba(255, 89, 0, .8);
+}
+
+.container__contact-info-icon{
+    margin: auto;
+    font-size: 1.6rem;
+    color: #fff;
+    animation: turnCircleContact 3s linear infinite alternate;
+}
+
+@keyframes turnCircleContact{
+    from{
+        transform: rotate(30deg);
+    }
+    to{
+        transform: rotate(-30deg);
+
+    }
+}
+
+.container__contact-info-text{
+    margin-top: 18px;
+    font-size: 1.3rem;
+    color: rgb(53, 53, 53);
+}
+
+.container__contact-info-name{
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.container__contact-info-link{
+    color: #2493e7;
+}
+
+#map-wrap{
+    margin-top: 54px;
+}
+
+/* Mobile & tablet: width <1024px */
+@media only screen and (max-width: 63.9375em){
+
+}
+
+/* Tablet: width >= 740px and width < 1024px */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    .container-contact {
+        padding: 0 32px;
+    }
+}
+
+/* Mobie: width < 740px */
+@media only screen and (max-width: 46.1875em) {
+    .container-contact{
+        padding: 0 8px;
+    }
+    .container__contact-info{
+        margin-top: 30px;
+        width: 100%;
+    }
+    .container__contact-info-text{
+        display: flex;
+        flex-direction: column;
+    }
+    .container__contact-info-name{
+        margin-bottom: 4px;
+    }
+
+}
+
+/* PC Low */
+@media (min-width: 1024px) and (max-width: 1239px) { 
+
+}
+
+/* PC: width >= 1024px */
+@media only screen and (min-width: 64em) {
+
+}

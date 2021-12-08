@@ -68,6 +68,7 @@ a{
 }
 
 
+
 #show-sub-menu.active {
     display: block;
     border-bottom: 1px solid #FF5B00;
@@ -320,7 +321,6 @@ a{
 }
 
 .navbar__setting-item{
-    padding: 10px;
     text-align: left;
     position: relative;
 }
@@ -328,6 +328,9 @@ a{
 .navbar__setting-link{
     font-size: 1.2rem;
     color: var(--text-color);
+    display: block;
+    padding: 10px;
+
 }
 
 .navbar__setting-item-icon{
@@ -1057,6 +1060,7 @@ a{
 
 /* Page Chart */
 
+.container-contact,
 .container-chart{
     margin-top: 70px;
     margin-bottom: 54px;
