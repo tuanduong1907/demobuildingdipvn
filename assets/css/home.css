@@ -456,7 +456,8 @@
         padding: 0 8px;
     }
     .slider{
-        height: 30vh;   
+        height: 30vh;
+        border-bottom-left-radius: 50px;
     }
     .slider__img{
         width: 150px;

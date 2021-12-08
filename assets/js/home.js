@@ -116,6 +116,8 @@ const myChart2 = new Chart(ctx2, {
     }
 });
 
+
+
 // Add Image Comment Section
 
 function chartCount() {

@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./assets/css/hoadon.css">
     <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/congno.css">
 </head>
 
 <body>
@@ -22,7 +22,7 @@
             <div class="grid">
                 <!-- Nav PC -->
                 <div class="navbar hidden-pc"> 
-                    <a href="./home.html" class="navbar__logo-wrap hidden-pc">
+                    <a href="" class="navbar__logo-wrap hidden-pc">
                         <img src="./assets/images/logo-dip-1.png" alt="" class="navbar__logo-img">
                         <span id="type1"></span>
                     </a>
@@ -32,10 +32,10 @@
                                 Trang chủ
                             </a>
                         </li>
-                        <li class="navbar__menu-item navbar__menu-item--actived">
+                        <li class="navbar__menu-item">
                             <a href="./hoadon.html" class="navbar__menu-item-link">Hóa đơn</a>
                         </li>
-                        <li class="navbar__menu-item">
+                        <li class="navbar__menu-item navbar__menu-item--actived">
                             <a href="./congno.html" class="navbar__menu-item-link">Công nợ</a>
                         </li>
                         <li class="navbar__menu-item">
@@ -139,10 +139,10 @@
                             <i class="navbar__mobile-menu-icon fas fa-home"></i>
                         </a>
                     </li>
-                    <li class="navbar__mobile-menu-item navbar__mobile-menu-item--actived">
+                    <li class="navbar__mobile-menu-item">
                         <a href="./hoadon.html" class="navbar__mobile-menu-item-link">Hóa đơn</a>
                     </li>
-                    <li class="navbar__mobile-menu-item">
+                    <li class="navbar__mobile-menu-item navbar__mobile-menu-item--actived">
                         <a href="./congno.html" class="navbar__mobile-menu-item-link">Công nợ</a>
                     </li>
                     <li class="navbar__mobile-menu-item" onclick="handleMenuMobile(event)">
@@ -195,43 +195,64 @@
         <!-- --- CONTAINER ----- -->
         <div class="container-manage">
             <div class="grid container-wrap">
-                <h3 class="container__heading-manage">Hóa Đơn Tháng 12:</h3>
+                <h3 class="container__heading-manage">Công Nợ Tháng 12:</h3>
                 <div class="container__list">
-                    <div class="container__item-manage col-3 col-2-tablet col-1-mobile ">
+                    <div class="container__item-manage col-4 col-2-tablet col-1-mobile">
                         <div class="container__item-manage-data">
-                            <i class="container__item-manage-data-icon icon-recrept--1 fas fa-file-invoice"></i>
-                            <div class="container__item-manage-data-number counter" data-target="34"></div>
+                            <i class="container__item-manage-data-icon icon-recrept--6 fas fa-coins"></i>
+                            <div class="container__item-manage-data-number counter" data-target="41"></div>
                         </div>
                         <div class="container__item-manage-footer">
                             <a href="#data-sheet-receipt" class="container__item-manage-view">Xem chi tiết</a>
-                            <p class="container__item-manage-total">Tổng hóa đơn phát sinh</p>
+                            <p class="container__item-manage-total">Nợ đầu vào</p>
                         </div>
                     </div>
-                    <div class="container__item-manage col-3 col-2-tablet col-1-mobile">
+                    <div class="container__item-manage col-4 col-2-tablet col-1-mobile">
                         <div class="container__item-manage-data">
-                            <i class="container__item-manage-data-icon icon-recrept--2 fas fa-file-invoice-dollar"></i>
-                            <div class="container__item-manage-data-number counter" data-target="52"></div>
+                            <i class="container__item-manage-data-icon icon-recrept--2  fas fa-file-contract"></i>
+                            <div class="container__item-manage-data-number counter" data-target="78"></div>
                         </div>
                         <div class="container__item-manage-footer">
                             <a href="#data-sheet-receipt" class="container__item-manage-view">Xem chi tiết</a>
-                            <p class="container__item-manage-total">Tổng hóa đơn thanh toán</p>
+                            <p class="container__item-manage-total">Phát sinh</p>
                         </div>
                     </div>
 
-                    <div class="container__item-manage col-3 col-2-tablet col-1-mobile">
+                    <div class="container__item-manage col-4 col-2-tablet col-1-mobile">
                         <div class="container__item-manage-data">
-                            <i class="container__item-manage-data-icon icon-recrept--3 fas fa-file-invoice-dollar"></i>
-                            <div class="container__item-manage-data-number counter" data-target="26"></div>
+                            <i class="container__item-manage-data-icon icon-recrept--3 fas fa-money-check-alt"></i>
+                            <div class="container__item-manage-data-number counter" data-target="92"></div>
                         </div>
                         <div class="container__item-manage-footer">
                             <a href="#data-sheet-receipt" class="container__item-manage-view">Xem chi tiết</a>
-                            <p class="container__item-manage-total">Tổng hóa đơn chưa thanh toán</p>
+                            <p class="container__item-manage-total">Đã thu</p>
                         </div>
-                    </div>                    
+                    </div>  
+                    <div class="container__item-manage col-4 col-2-tablet col-1-mobile">
+                        <div class="container__item-manage-data">
+                            <i class="container__item-manage-data-icon icon-recrept--4 fas fa-file-invoice-dollar"></i>
+                            <div class="container__item-manage-data-number counter" data-target="27"></div>
+                        </div>
+                        <div class="container__item-manage-footer">
+                            <a href="#data-sheet-receipt" class="container__item-manage-view">Xem chi tiết</a>
+                            <p class="container__item-manage-total">Còn nợ</p>
+                        </div>
+                    </div>                        
+                </div>
+
+                <div class="container__item-manage-all col-1">
+                    <div class="container__item-manage-all-data">
+                        <i class="container__item-manage-all-data-icon icon-recrept--5 fas fa-file-invoice-dollar"></i>
+                        <a href="#data-sheet-receipt" class="container__item-manage-all-view">Xem chi tiết</a>
+                    </div>
+                    <div class="container__item-manage-all-footer">
+                        <div class="container__item-manage-all-data-number counter" data-target="238"></div>
+                        <p class="container__item-manage-all-total">Công nợ cuối</p>
+                    </div>
                 </div>
 
                 <div class="container__data-sheet-wrap" id="data-sheet-receipt">
-                    <h3 class="container__heading-manage">Chi Tiết Hóa Đơn:</h3>
+                    <h3 class="container__heading-manage">Chi Tiết Công Nợ:</h3>
                     <div class="container__data-sheet">
                         <header class="container__data-sheet-header">
                             <div class="container__data-sheet-header-item">
@@ -262,80 +283,34 @@
                                 <header class="container__table-data-header">
                                     <ul class="container__table-data-header-list">
                                         <li class="container__table-data-header-item">
-                                            <div class="container__table-data-header-name">
-                                                <input type="checkbox" name="" id="container__table-data-header-checkbox" >
-                                            </div>
-                                            <div class="container__table-data-header-search hidden-pc-tablet">
-                                                <i class="container__table-data-header-search-icon fas fa-search"></i>
-                                                <input type="text" name="" placeholder="Tìm kiếm" class="container__table-data-header-search-input">
-                                            </div>
+                                            <span class="container__table-data-header-name">Nợ đầu kì</span>
                                         </li>
                                         <li class="container__table-data-header-item">
-                                            <span class="container__table-data-header-name">Loại phí</span>
-                                            <div class="container__table-data-header-search hidden-pc-tablet">
-                                                <i class="container__table-data-header-search-icon fas fa-search"></i>
-                                                <input type="text" name="" placeholder="Tìm kiếm" class="container__table-data-header-search-input">
-                                            </div>
-                                        </li>
-                                        <li class="container__table-data-header-item">
-                                            <span class="container__table-data-header-name">Diễn giải</span>
-                                            <div class="container__table-data-header-search hidden-pc-tablet">
-                                                <i class="container__table-data-header-search-icon fas fa-search"></i>
-                                                <input type="text" name="" placeholder="Tìm kiếm" class="container__table-data-header-search-input">
-                                            </div>
-                                        </li>
-                                        <li class="container__table-data-header-item">
-                                            <span class="container__table-data-header-name">Phải thu</span>
-                                            <div class="container__table-data-header-search hidden-pc-tablet">
-                                                <i class="container__table-data-header-search-icon fas fa-search"></i>
-                                                <input type="text" name="" placeholder="Tìm kiếm" class="container__table-data-header-search-input">
-                                            </div>
+                                            <span class="container__table-data-header-name">Phát sinh</span>
                                         </li>
                                         <li class="container__table-data-header-item">
                                             <span class="container__table-data-header-name">Đã thu</span>
-                                            <div class="container__table-data-header-search hidden-pc-tablet">
-                                                <i class="container__table-data-header-search-icon fas fa-search"></i>
-                                                <input type="text" name="" placeholder="Tìm kiếm" class="container__table-data-header-search-input">
-                                            </div>
                                         </li>
                                         <li class="container__table-data-header-item">
-                                            <span class="container__table-data-header-name">Còn nợ	</span>
-                                            <div class="container__table-data-header-search hidden-pc-tablet">
-                                                <i class="container__table-data-header-search-icon fas fa-search"></i>
-                                                <input type="text" name="" placeholder="Tìm kiếm" class="container__table-data-header-search-input">
-                                            </div>
+                                            <span class="container__table-data-header-name">Khâu trừ</span>
                                         </li>
                                         <li class="container__table-data-header-item">
-                                            <span class="container__table-data-header-name">Trạng thái</span>
-                                            <div class="container__table-data-header-search hidden-pc-tablet">
-                                                <i class="container__table-data-header-search-icon fas fa-search"></i>
-                                                <input type="text" name="" placeholder="Tìm kiếm" class="container__table-data-header-search-input">
-                                            </div>
+                                            <span class="container__table-data-header-name">Còn nợ</span>
+                                        </li>
+                                        <li class="container__table-data-header-item">
+                                            <span class="container__table-data-header-name">Thu trước</span>
+                                        </li>
+                                        <li class="container__table-data-header-item">
+                                            <span class="container__table-data-header-name">Nợ cuối</span>
                                         </li>
                                     </ul>
                                 </header>
                                 <div class="container__table-data-body">
                                     <span>Không có dữ liệu</span>
                                 </div>
-                                <footer class="container__table-data-footer">
-                                    <span class="container__table-data-total">Tổng thanh toán: </span><span class="container__table-data-total-number">0 đ</span>
-                                </footer>
                             </div>
                             <div class="btn-data-table-wrap">
-                                <button class="btn btn-data-table">Xem</button>
-                                <button onclick="handleMenuPay(event)" class="btn btn-data-table">
-                                    Thanh toán <i class="navbar__menu-item-icon fas fa-chevron-down"></i>
-                                    <ul class="pay-list">
-                                        <li class="pay-item">
-                                            <a href="#" class="pay-item-link">
-                                                <img src="./assets/images/Logo-VNPAY-QR.png" alt="" class="pay-item-img">
-                                            </a>
-                                            <div class="pay-item-des">
-                                                <span>Thanh toán hóa đơn qua VNPay</span>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </button>
+                                <button class="btn btn-data-table">Xuất file</button>
                             </div>
                         </div>
                     </div>
