@@ -17,9 +17,7 @@
     color: var(--text-color);
 
 }
-.container__feeback-box-header-icon{
 
-}
 .container__feeback-box-body{
     height: 300px;
     max-height: 300px;
@@ -28,7 +26,10 @@
     margin-top: 12px;
 }
 
-.container__feeback-box-body::-webkit-scrollbar {
+.container__feeback-box-body::-webkit-scrollbar,
+.container__feeback-box-body::-o-scrollbar,
+.container__feeback-box-body::-ms-scrollbar,
+.container__feeback-box-body::-moz-scrollbar {
     width: 4px;
     cursor: pointer;
 }
@@ -36,58 +37,23 @@
 
   
 /* Track */
-.container__feeback-box-body::-webkit-scrollbar-track {
-    background: #dfdfdf;
-    border-radius: 10px;
-}
-
+.container__feeback-box-body::-webkit-scrollbar-track,
+.container__feeback-box-body::-o-scrollbar-track,
+.container__feeback-box-body::-ms-scrollbar-track,
 .container__feeback-box-body::-moz-scrollbar-track {
     background: #dfdfdf;
     border-radius: 10px;
 }
-
-.container__feeback-box-body::-ms-scrollbar-track {
-    background: #dfdfdf;
-    border-radius: 10px;
-}
-
-.container__feeback-box-body::-o-scrollbar-track {
-    background: #dfdfdf;
-    border-radius: 10px;
-}
-
-
-
-
   
   /* Handle */
-.container__feeback-box-body::-webkit-scrollbar-thumb {
+.container__feeback-box-body::-webkit-scrollbar-thumb,
+.container__feeback-box-body::-moz-scrollbar-thumb,
+.container__feeback-box-body::-ms-scrollbar-thumb,
+.container__feeback-box-body::-o-scrollbar-thumb {
     background-color: var(--sub-color);
     border-radius: 10px;
     transition: all 0.55s linear;
 }
-
-.container__feeback-box-body::-moz-scrollbar-thumb {
-    background-color: var(--sub-color);
-    border-radius: 10px;
-    transition: all 0.55s linear;
-}
-  
-  .container__feeback-box-body::-ms-scrollbar-thumb {
-    background-color: var(--sub-color);
-    border-radius: 10px;
-    transition: all 0.55s linear;
-}
-  
-  .container__feeback-box-body::-o-scrollbar-thumb {
-    background-color: var(--sub-color);
-    border-radius: 10px;
-    transition: all 0.55s linear;
-}
-  
-
-
-
 
 
 .container__feeback-box-footer{
@@ -97,9 +63,6 @@
 
 }
 
-.container__feeback-box-footer-wrap{
-
-}
 .container__feeback-box-item{
     margin-bottom: 18px;
 }
@@ -209,6 +172,7 @@
     .container__feeback-box-body-item{
         padding-right: 14px;
     }
+}
 
 /* Tablet: width >= 740px and width < 1024px */
 @media only screen and (min-width: 740px) and (max-width: 1023px) {
@@ -216,8 +180,4 @@
         padding: 32px;
     }
 
-    .container__feeback-box-body{
-
-    }
-}
 }
