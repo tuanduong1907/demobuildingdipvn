@@ -99,8 +99,11 @@
 
 .container__feeback-box-body-item{
     display: flex;
-    justify-content: right;
-    -webkit-justify-content: right;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    -moz-justify-content: flex-end;
+    -ms-justify-content: flex-end;
+    -o-justify-content: flex-end;
     align-items: center;
     padding: 0 12px 16px;
     
