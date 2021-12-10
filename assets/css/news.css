@@ -364,6 +364,9 @@
     .container__news-info-wrap{
         margin-right: 0;
     }
+    .container__commnet-box-news{
+        overflow-y: auto;
+    }
 }
 
 /* Tablet: width >= 740px and width < 1024px */
