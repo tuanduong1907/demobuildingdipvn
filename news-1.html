@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./assets/css/hoadon.css">
     <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/news.css">
 </head>
 
 <body>
@@ -20,6 +20,7 @@
         <!-- HEADER SECTION -->
         <header class="header">
             <div class="grid">
+
                 <!-- Nav PC -->
                 <div class="navbar hidden-pc"> 
                     <a href="./home.html" class="navbar__logo-wrap hidden-pc">
@@ -27,12 +28,12 @@
                         <span id="type1"></span>
                     </a>
                     <ul class="navbar__menu-list">
-                        <li class="navbar__menu-item ">
+                        <li class="navbar__menu-item">
                             <a href="./home.html" class="navbar__menu-item-link">
                                 Trang chủ
                             </a>
                         </li>
-                        <li class="navbar__menu-item navbar__menu-item--actived">
+                        <li class="navbar__menu-item">
                             <a href="./hoadon.html" class="navbar__menu-item-link">Hóa đơn</a>
                         </li>
                         <li class="navbar__menu-item">
@@ -44,19 +45,19 @@
                                 <i class="navbar__menu-item-icon fas fa-chevron-down"></i>
                             </a>
                             <ul class="navbar__sub-menu-list">
-                                <li class="navbar__sub-menu-item">
+                                <li class="navbar__sub-menu-item" style="font-weight: 500;">
                                     <a href="./bieudodien.html" class="navbar__sub-menu-link">
                                         <i class="navbar__sub-menu-icon fas fa-lightbulb"></i>
                                         Chỉ số tiêu thụ diện
                                     </a>
                                 </li>
-                                <li class="navbar__sub-menu-item">
+                                <li class="navbar__sub-menu-item" style="font-weight: 500;">
                                     <a href="./bieudonuoc.html" class="navbar__sub-menu-link">
                                         <i class="navbar__sub-menu-icon fas fa-tint"></i>
                                         Chỉ số tiêu nước
                                     </a>
                                 </li>
-                                <li class="navbar__sub-menu-item">
+                                <li class="navbar__sub-menu-item" style="font-weight: 500;">
                                     <a href="./bieudoxe.html" class="navbar__sub-menu-link">
                                         <i class="navbar__sub-menu-icon fas fa-address-book"></i>
                                         Thống kê số lượng xe
@@ -139,7 +140,7 @@
                             <i class="navbar__mobile-menu-icon fas fa-home"></i>
                         </a>
                     </li>
-                    <li class="navbar__mobile-menu-item navbar__mobile-menu-item--actived">
+                    <li class="navbar__mobile-menu-item">
                         <a href="./hoadon.html" class="navbar__mobile-menu-item-link">Hóa đơn</a>
                     </li>
                     <li class="navbar__mobile-menu-item">
@@ -208,156 +209,110 @@
                 <span> 028 7106 9079 </span>
             </div>
         </div>
-        <!-- --- CONTAINER ----- -->
-        <div class="container-manage">
-            <div class="grid container-wrap">
-                <h3 class="container__heading-manage">Hóa Đơn Tháng 12:</h3>
-                <div class="container__list">
-                    <div class="container__item-manage col-3 col-2-tablet col-1-mobile ">
-                        <div class="container__item-manage-data">
-                            <i class="container__item-manage-data-icon icon-recrept--1 fas fa-file-invoice"></i>
-                            <div class="container__item-manage-data-number counter" data-target="34"></div>
-                        </div>
-                        <div class="container__item-manage-footer">
-                            <a href="#data-sheet-receipt" class="container__item-manage-view">Xem chi tiết</a>
-                            <p class="container__item-manage-total">Tổng hóa đơn phát sinh</p>
-                        </div>
-                    </div>
-                    <div class="container__item-manage col-3 col-2-tablet col-1-mobile">
-                        <div class="container__item-manage-data">
-                            <i class="container__item-manage-data-icon icon-recrept--2 fas fa-file-invoice-dollar"></i>
-                            <div class="container__item-manage-data-number counter" data-target="52"></div>
-                        </div>
-                        <div class="container__item-manage-footer">
-                            <a href="#data-sheet-receipt" class="container__item-manage-view">Xem chi tiết</a>
-                            <p class="container__item-manage-total">Tổng hóa đơn thanh toán</p>
-                        </div>
-                    </div>
 
-                    <div class="container__item-manage col-3 col-2-tablet col-1-mobile">
-                        <div class="container__item-manage-data">
-                            <i class="container__item-manage-data-icon icon-recrept--3 fas fa-file-invoice-dollar"></i>
-                            <div class="container__item-manage-data-number counter" data-target="26"></div>
-                        </div>
-                        <div class="container__item-manage-footer">
-                            <a href="#data-sheet-receipt" class="container__item-manage-view">Xem chi tiết</a>
-                            <p class="container__item-manage-total">Tổng hóa đơn chưa thanh toán</p>
-                        </div>
-                    </div>                    
-                </div>
-
-                <div class="container__data-sheet-wrap" id="data-sheet-receipt">
-                    <h3 class="container__heading-manage">Chi Tiết Hóa Đơn:</h3>
-                    <div class="container__data-sheet">
-                        <header class="container__data-sheet-header">
-                            <div class="container__data-sheet-header-item">
-                                <p class="container__data-sheet-header-text">
-                                    Tháng / Month
-                                </p>
-                                <input type="number" max="12" min="1" class="container__data-sheet-header-input">
-                            </div>
-                            <div class="container__data-sheet-header-item">
-                                <p class="container__data-sheet-header-text">
-                                    Name / Year
-                                </p>
-                                <input type="number" max="2099" min="2000" class="container__data-sheet-header-input">
-                            </div>
-                            <div class="container__data-sheet-header-item">
-                                <p class="container__data-sheet-header-text">
-                                    Trạng thái
-                                </p>
-                                <select name="" class="container__data-sheet-status">
-                                    <option value="1">--All--</option>
-                                    <option value="2">Chưa thanh toán</option>
-                                    <option value="3">Đã thanh toán</option>
-                                </select>
+        <!-- CONTAINER SECTION -->
+        <div class="container container-chart">
+            <div class="grid">
+                <div class="container__news-info-all">
+                    <div class="container__news-info-wrap">
+                        <header class="container__news-info-header">
+                            <h1 class="container__news-info-heading">
+                                Đông Dương Land với mục đích số hóa quản lý dự án Golden City trên di động
+                            </h1>
+                            <div class="container__news-info-time">
+                                <i class="container__news-info-time-icon fas fa-calendar-day"></i>
+                                25/01/2021
                             </div>
                         </header>
-                        <div class="container__item-wrap container__item-manage-data-sheet-wrap reveal">
-                            <div class="container__table-data">
-                                <header class="container__table-data-header">
-                                    <ul class="container__table-data-header-list">
-                                        <li class="container__table-data-header-item">
-                                            <div class="container__table-data-header-name">
-                                                <input type="checkbox" name="" id="container__table-data-header-checkbox" >
-                                            </div>
-                                            <div class="container__table-data-header-search hidden-pc-tablet">
-                                                <i class="container__table-data-header-search-icon fas fa-search"></i>
-                                                <input type="text" name="" placeholder="Tìm kiếm" class="container__table-data-header-search-input">
-                                            </div>
-                                        </li>
-                                        <li class="container__table-data-header-item">
-                                            <span class="container__table-data-header-name">Loại phí</span>
-                                            <div class="container__table-data-header-search hidden-pc-tablet">
-                                                <i class="container__table-data-header-search-icon fas fa-search"></i>
-                                                <input type="text" name="" placeholder="Tìm kiếm" class="container__table-data-header-search-input">
-                                            </div>
-                                        </li>
-                                        <li class="container__table-data-header-item">
-                                            <span class="container__table-data-header-name">Diễn giải</span>
-                                            <div class="container__table-data-header-search hidden-pc-tablet">
-                                                <i class="container__table-data-header-search-icon fas fa-search"></i>
-                                                <input type="text" name="" placeholder="Tìm kiếm" class="container__table-data-header-search-input">
-                                            </div>
-                                        </li>
-                                        <li class="container__table-data-header-item">
-                                            <span class="container__table-data-header-name">Phải thu</span>
-                                            <div class="container__table-data-header-search hidden-pc-tablet">
-                                                <i class="container__table-data-header-search-icon fas fa-search"></i>
-                                                <input type="text" name="" placeholder="Tìm kiếm" class="container__table-data-header-search-input">
-                                            </div>
-                                        </li>
-                                        <li class="container__table-data-header-item">
-                                            <span class="container__table-data-header-name">Đã thu</span>
-                                            <div class="container__table-data-header-search hidden-pc-tablet">
-                                                <i class="container__table-data-header-search-icon fas fa-search"></i>
-                                                <input type="text" name="" placeholder="Tìm kiếm" class="container__table-data-header-search-input">
-                                            </div>
-                                        </li>
-                                        <li class="container__table-data-header-item">
-                                            <span class="container__table-data-header-name">Còn nợ	</span>
-                                            <div class="container__table-data-header-search hidden-pc-tablet">
-                                                <i class="container__table-data-header-search-icon fas fa-search"></i>
-                                                <input type="text" name="" placeholder="Tìm kiếm" class="container__table-data-header-search-input">
-                                            </div>
-                                        </li>
-                                        <li class="container__table-data-header-item">
-                                            <span class="container__table-data-header-name">Trạng thái</span>
-                                            <div class="container__table-data-header-search hidden-pc-tablet">
-                                                <i class="container__table-data-header-search-icon fas fa-search"></i>
-                                                <input type="text" name="" placeholder="Tìm kiếm" class="container__table-data-header-search-input">
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </header>
-                                <div class="container__table-data-body">
-                                    <span>Không có dữ liệu</span>
+                        <div class="container__news-info-body">
+                            <div class="container__news-info-body-desc">
+                                Chính vì điều này mà vừa qua công ty TNHH tập đoàn Đông Dương Land đã sử dụng App Mobile Landsoft để nâng cấp quản lý cho dự án Golden City, mang lại giải pháp quản lý kinh doanh hoàn hảo cho người dùng trên nền tảng di động.
+                            </div>
+                            <p>Công ty TNHH tập đoàn Đông Dương Land là chi nhánh của địa ốc Hoàng Quân, doanh nghiệp mới được thành lập từ tháng 6 và tới nay đã hoạt động được 4 tháng. Mặc dù mới được đăng ký kinh doanh không lâu nhưng Đông Dương Land lại có nền tảng nhân sự, bộ máy quản lý vững chắc từ địa ốc Hoàng Quân, bao gồm ứng dụng phần mềm quản lý kinh doanh bất động sản Landsoft của DIP Việt Nam để số hóa bộ máy quản lý doanh nghiệp ngay từ đầu.</p>
+                            
+                            <p>Chính điều này đã xây dựng cho Đông Dương Land nền tảng quản lý dự án khoa học và hiện đại từ thời điểm mới hoạt động, tiếp đó nhanh chóng tạo dựng dấu ấn trên thị trường bất động sản tại thành phố Hồ Chí Minh.</p>
+                            
+                            <p>Giờ đây Đông Dương Land cũng triển khai tư vấn kinh doanh dự án bất động sản Golden City nhằm mang tới cho khách hàng những sản phẩm bất động sản chất lượng và uy tín.</p>
+                            
+                            <p>Tuy nhiên, để nâng cao hiệu quả quản lý kinh doanh dự án Golden City càng thêm tiện dụng hơn thì Đông Dương Land không thể chỉ ứng dụng phần mềm Landsoft của địa ốc Hoàng Quân vào quản lý dự án, thay vào đó doanh nghiệp cần có một ứng dụng riêng biệt để phục vụ riêng cho mục đích kinh doanh dự án Golden City, nâng cao hiệu suất hoạt động cho riêng dự án của doanh nghiệp.</p>
+                            
+                            <img src="https://dip.vn/Content/Images/dong-duong-land-nang-cap-quan-ly-kinh-doanh-du-an-Golden-City-1.jpg" alt="">
+                            
+                            <p>Chính vì vậy Đông Dương Land đã quyết định phát triển riêng App Mobile Landsoft cho riêng dự án Golden City dựa trên hệ thống cơ sở dữ liệu phần mềm Landsoft của địa ốc Hoàng Quân trong dự án Golden City.</p>
+    
+                            <p>Ứng dụng được DIP Việt Nam xây dựng App Booking độc lập cho một dự án duy nhất là Golden City, trong đó những dữ liệu app từ database trên phần mềm Landsoft Hoàng Quân. Mặc dù vậy App Mobile Landsoft Golden City vẫn đảm bảo hoàn toàn độc lập với App Hoàng Quân Land và chỉ dùng cho 1 dự án là Golden City.</p>
+                            
+                            <h1>App Landsoft Golden City mang lại thay đổi gì trong quản lý của Đông Dương Land?</h1>
+    
+                            <p>Là ứng dụng quản lý kinh doanh bất động sản trên nền tảng di động, App Landsoft Golden City  được DIP Việt Nam xây dựng hoàn toàn độc lập với App Hoàng Quân Land, mang lại cho Đông Dương Land giải pháp quản lý và chăm sóc khách hàng hiệu quả trên nền tảng di động. Điều này cũng đảm bảo tính chuyên nhất và bảo mật cao, tối ưu được hiệu quả kinh doanh cũng như quản lý của Đông Dương Land trong quá trình kinh doanh.</p>
+                            
+                            <p>Với sự trợ giúp của App Mobile Golden City, toàn bộ thông tin khách hàng cùng danh sách khách hàng đều được quản lý khoa học trên nền tảng di động, qua đó người dùng có thể trực tiếp thêm mới khách hàng là cá nhân hoặc công ty ngay trên ứng dụng di động, giúp việc quản lý khách hàng càng thêm nhanh chóng, tiết kiệm thời gian hơn.</p>
+                            
+                            <p>Đặc biệt, App Mobile Golden City còn tích hợp thêm tính năng cập nhật lịch sử tương tác làm việc với khách hàng, ghi nhận lại danh sách các giao dịch đang thực hiện với chủ đầu tư. Điều này giúp người quản lý vừa có thể nắm bắt được quá trình làm việc với khách hàng của từng nhân viên tốt hơn mà còn kiểm soát được toàn bộ giao dịch bất động sản thực hiện với chủ đầu tư, hỗ trợ việc quản lý kinh doanh, chăm sóc và tư vấn khách hàng càng thêm chuyên nghiệp.</p>
+    
+                            <img src="https://dip.vn/Content/Images/dong-duong-land-nang-cap-quan-ly-kinh-doanh-du-an-Golden-City-2.jpg" alt="">
+                            
+                            <p>Có thể nói, khi sử dụng App Landsoft Golden City, người quản lý chỉ cần truy cập vào App ngay trên chiếc di động của mình là có thể quản lý được toàn bộ thông tin chi tiết của dự án, bao gồm: Vị trí, mặt bằng, chính sách bán hàng, mẫu căn hộ, lịch thanh toán hay giỏ hàng sản phẩm.</p>
+    
+                            <p>Ngoài ra đây còn là công cụ đắc lực để người quản lý kiểm soát được các giỏ hàng sản phẩm trong dự án, tự động phân loại trạng thái sản phẩm ( đặt cọc, giữ chỗ, mua bán, mở bán) theo màu sắc trạng thái, từ đó giúp nhân viên phân biệt rõ ràng và tư vấn tới khách hàng nhanh chóng nhất.</p>
+    
+                            <p>Hệ thống cũng giúp người dùng quản lý chi tiết thông tin sản phẩm bất động sản, tích hợp chức năng giữ chỗ sản phẩm trên danh sách giỏ hàng và quản lý danh sách phiếu đặt chỗ, phê duyệt thông tin giao dịch cho bộ phận quản lý. Những điều này đều mang lại sự tiện lợi cao nhất cho Đông Dương Land trong quá trình sử dụng.</p>
+    
+                            <p>Bên cạnh đó, App Mobile Golden City còn có tính năng quản lý danh sách lịch hẹn của nhân viên, báo cáo doanh thu dự án theo dạng biểu đồ, qua đó chủ doanh nghiệp sẽ nắm bắt được tình hình kinh doanh dự án nhanh chóng và dễ dàng ngay trên di động của mình.</p>
+    
+                            <img src="https://dip.vn/Content/Images/Landsoft-Agency-600x314(1).jpg" alt="">
+    
+                            <a href="./news-3.html"><i class="fas fa-arrow-right"></i> Phần mềm CRM Plus giúp bất động sản GIC nâng cao quản lý nội bộ tốt hơn</a>
+                        </div>
+                    </div>
+                    
+                    <!-- News More -->
+                    <div class="container__news-info-more-wrap">
+                        <h2 class="container__news-info-more-heading">Tin Tức Mới Nhất</h2>
+    
+                        <div class="container__news-info-more-list">
+                            <div class="container__news-info-more-item">
+                                <a href="news-2.html">
+                                    <img src="https://dip.vn/Content/Images/5-tieu-chi-chon-don-vi-phan-mem-quan-ly-toa-nha-tot-2.jpg" alt="">
+                                </a>
+                                <div class="container__news-info-more-content">
+                                    <a href="news-2.html" class="container__news-info-more-text">4 tiêu chí để lựa chọn đơn vị triển khai phần mềm quản lý tòa nhà phù hợp</a>
+                                    <div class="container__news-info-more-day">
+                                        <span>19-01-2021</span><a href="news-2.html">Xem thêm</a>
+                                    </div>
                                 </div>
-                                <footer class="container__table-data-footer">
-                                    <span class="container__table-data-total">Tổng thanh toán: </span><span class="container__table-data-total-number">0 đ</span>
-                                </footer>
                             </div>
-                            <div class="btn-data-table-wrap">
-                                <button class="btn btn-data-table">Xem</button>
-                                <button onclick="handleMenuPay(event)" class="btn btn-data-table">
-                                    Thanh toán <i class="navbar__menu-item-icon fas fa-chevron-down"></i>
-                                    <ul class="pay-list">
-                                        <li class="pay-item">
-                                            <a href="#" class="pay-item-link">
-                                                <img src="./assets/images/Logo-VNPAY-QR.png" alt="" class="pay-item-img">
-                                            </a>
-                                            <div class="pay-item-des">
-                                                <span>Thanh toán hóa đơn qua VNPay</span>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </button>
+                            <div class="container__news-info-more-item">
+                                <a href="news-3.html">
+                                    <img src="https://dip.vn/UPLOAD/Buildings/Demo/Upload/crm-plus-so-hoa-quan-ly-cham-soc-khach-hang-gic-2.jpg" alt="">
+                                </a>
+                                <div class="container__news-info-more-content">
+                                    <a href="news-3.html" class="container__news-info-more-text">CRM Plus - Giải pháp giúp bất động sản GIC số hóa bộ máy quản lý và tối ưu chăm sóc khách hàng</a>
+                                    <div class="container__news-info-more-day">
+                                        <span>25/01/2021</span><a href="news-3.html">Xem thêm</a>
+                                    </div>
+                                </div>
                             </div>
+                            
                         </div>
                     </div>
                 </div>
-            </div>            
-        </div>
+
+                <!-- Comment News -->
+                <div class="container__news-commnet-wrap">
+                    <h2 class="container__news-commnet-heading">
+                        Bình luận:
+                    </h2>
+                    <div class="container__commnet-box-news"></div>
+                    <div class="container__news-commnet-header">
+                        <img src="./assets/images/user-feedback.png" alt="">
+                        <textarea name="" placeholder="Nhập bình luận" class="container__news-commnet-input" ></textarea>
+                        <button class="btn container__news-commnet-btn">Gửi bình luận</button>
+                    </div>
+                </div>
+            </div>
+        </div>            
+       
 
         <!-- FOOTER SECTION -->
         <footer class="footer">
@@ -415,6 +370,14 @@
                 </div>
         </footer>
     </div>
+
+    <!-- Messenger Plugin chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+    
     <!-- Type It -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/7.0.4/typeit.min.js"></script>
@@ -423,8 +386,68 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.2/dist/chart.min.js"></script>
     <script src="./assets/js/app.js"></script>
-    <script src="./assets/js/hoadon.js"></script>
+    <script>
+        var CommnetsNews1Api = 'https://61b23170c8d4640017aaf29d.mockapi.io/api/commentNews1'
 
+        function start() {
+            getDataComment(renderDataComment)
+
+            handleCreateComment()
+        }
+        start()
+
+        function resestInput() {
+            document.querySelector('.container__news-commnet-input').value = ''
+        }
+
+        function getDataComment(callback) {
+            fetch(CommnetsNews1Api)
+                .then(res => res.json())
+                .then(callback)
+        }
+
+        function CreateComment(data, callback) {
+            var options = {
+                method: 'POST',
+                headers: {
+                    'content-type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            }
+            fetch(CommnetsNews1Api, options)
+                .then(res=> res.json())
+                .then(callback)
+        }
+
+        function renderDataComment(dataComments) {
+            var html = ''
+            dataComments.forEach((dataComment)=> {
+                return html +=`<div class="container__commnet-news-box-body-item">
+                    <img src="./assets/images/user-feedback.png" class="container__commnet-news-box-body-img">
+                    <div class="container__commnet-news-box-body-item-content-wrap">
+                        <h2>Admin</h2>
+                        <p class="container__commnet-news-box-body-item-content">${dataComment.content}</p>
+                    </div>
+                </div>`
+            })
+            document.querySelector('.container__commnet-box-news').innerHTML = html
+        }
+
+        function handleCreateComment() {
+            var createBtn = document.querySelector('.container__news-commnet-btn')
+            createBtn.onclick = function() {
+                var contentComment = document.querySelector('.container__news-commnet-input').value
+
+                var data = {
+                    content: contentComment
+                }
+                CreateComment(data, ()=> {
+                    getDataComment(renderDataComment)
+                    resestInput()
+                })
+            }
+        }
+    </script>
 </body>
 
 </html>

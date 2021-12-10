@@ -16,6 +16,7 @@ function reveal() {
     }
 }
 
+
 //  animation text
 new TypeIt("#type1", {
     speed: 150,

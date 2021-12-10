@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./assets/css/hoadon.css">
     <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/news.css">
 </head>
 
 <body>
@@ -20,6 +20,7 @@
         <!-- HEADER SECTION -->
         <header class="header">
             <div class="grid">
+
                 <!-- Nav PC -->
                 <div class="navbar hidden-pc"> 
                     <a href="./home.html" class="navbar__logo-wrap hidden-pc">
@@ -27,12 +28,12 @@
                         <span id="type1"></span>
                     </a>
                     <ul class="navbar__menu-list">
-                        <li class="navbar__menu-item ">
+                        <li class="navbar__menu-item">
                             <a href="./home.html" class="navbar__menu-item-link">
                                 Trang chủ
                             </a>
                         </li>
-                        <li class="navbar__menu-item navbar__menu-item--actived">
+                        <li class="navbar__menu-item">
                             <a href="./hoadon.html" class="navbar__menu-item-link">Hóa đơn</a>
                         </li>
                         <li class="navbar__menu-item">
@@ -44,19 +45,19 @@
                                 <i class="navbar__menu-item-icon fas fa-chevron-down"></i>
                             </a>
                             <ul class="navbar__sub-menu-list">
-                                <li class="navbar__sub-menu-item">
+                                <li class="navbar__sub-menu-item" style="font-weight: 500;">
                                     <a href="./bieudodien.html" class="navbar__sub-menu-link">
                                         <i class="navbar__sub-menu-icon fas fa-lightbulb"></i>
                                         Chỉ số tiêu thụ diện
                                     </a>
                                 </li>
-                                <li class="navbar__sub-menu-item">
+                                <li class="navbar__sub-menu-item" style="font-weight: 500;">
                                     <a href="./bieudonuoc.html" class="navbar__sub-menu-link">
                                         <i class="navbar__sub-menu-icon fas fa-tint"></i>
                                         Chỉ số tiêu nước
                                     </a>
                                 </li>
-                                <li class="navbar__sub-menu-item">
+                                <li class="navbar__sub-menu-item" style="font-weight: 500;">
                                     <a href="./bieudoxe.html" class="navbar__sub-menu-link">
                                         <i class="navbar__sub-menu-icon fas fa-address-book"></i>
                                         Thống kê số lượng xe
@@ -139,7 +140,7 @@
                             <i class="navbar__mobile-menu-icon fas fa-home"></i>
                         </a>
                     </li>
-                    <li class="navbar__mobile-menu-item navbar__mobile-menu-item--actived">
+                    <li class="navbar__mobile-menu-item">
                         <a href="./hoadon.html" class="navbar__mobile-menu-item-link">Hóa đơn</a>
                     </li>
                     <li class="navbar__mobile-menu-item">
@@ -208,156 +209,124 @@
                 <span> 028 7106 9079 </span>
             </div>
         </div>
-        <!-- --- CONTAINER ----- -->
-        <div class="container-manage">
-            <div class="grid container-wrap">
-                <h3 class="container__heading-manage">Hóa Đơn Tháng 12:</h3>
-                <div class="container__list">
-                    <div class="container__item-manage col-3 col-2-tablet col-1-mobile ">
-                        <div class="container__item-manage-data">
-                            <i class="container__item-manage-data-icon icon-recrept--1 fas fa-file-invoice"></i>
-                            <div class="container__item-manage-data-number counter" data-target="34"></div>
-                        </div>
-                        <div class="container__item-manage-footer">
-                            <a href="#data-sheet-receipt" class="container__item-manage-view">Xem chi tiết</a>
-                            <p class="container__item-manage-total">Tổng hóa đơn phát sinh</p>
-                        </div>
-                    </div>
-                    <div class="container__item-manage col-3 col-2-tablet col-1-mobile">
-                        <div class="container__item-manage-data">
-                            <i class="container__item-manage-data-icon icon-recrept--2 fas fa-file-invoice-dollar"></i>
-                            <div class="container__item-manage-data-number counter" data-target="52"></div>
-                        </div>
-                        <div class="container__item-manage-footer">
-                            <a href="#data-sheet-receipt" class="container__item-manage-view">Xem chi tiết</a>
-                            <p class="container__item-manage-total">Tổng hóa đơn thanh toán</p>
-                        </div>
-                    </div>
 
-                    <div class="container__item-manage col-3 col-2-tablet col-1-mobile">
-                        <div class="container__item-manage-data">
-                            <i class="container__item-manage-data-icon icon-recrept--3 fas fa-file-invoice-dollar"></i>
-                            <div class="container__item-manage-data-number counter" data-target="26"></div>
-                        </div>
-                        <div class="container__item-manage-footer">
-                            <a href="#data-sheet-receipt" class="container__item-manage-view">Xem chi tiết</a>
-                            <p class="container__item-manage-total">Tổng hóa đơn chưa thanh toán</p>
-                        </div>
-                    </div>                    
-                </div>
-
-                <div class="container__data-sheet-wrap" id="data-sheet-receipt">
-                    <h3 class="container__heading-manage">Chi Tiết Hóa Đơn:</h3>
-                    <div class="container__data-sheet">
-                        <header class="container__data-sheet-header">
-                            <div class="container__data-sheet-header-item">
-                                <p class="container__data-sheet-header-text">
-                                    Tháng / Month
-                                </p>
-                                <input type="number" max="12" min="1" class="container__data-sheet-header-input">
-                            </div>
-                            <div class="container__data-sheet-header-item">
-                                <p class="container__data-sheet-header-text">
-                                    Name / Year
-                                </p>
-                                <input type="number" max="2099" min="2000" class="container__data-sheet-header-input">
-                            </div>
-                            <div class="container__data-sheet-header-item">
-                                <p class="container__data-sheet-header-text">
-                                    Trạng thái
-                                </p>
-                                <select name="" class="container__data-sheet-status">
-                                    <option value="1">--All--</option>
-                                    <option value="2">Chưa thanh toán</option>
-                                    <option value="3">Đã thanh toán</option>
-                                </select>
+        <!-- CONTAINER SECTION -->
+        <div class="container container-chart">
+            <div class="grid">
+                <div class="container__news-info-all">
+                    <div class="container__news-info-wrap">
+                        <header class="container__news-info-header">
+                            <h1 class="container__news-info-heading">
+                                4 tiêu chí để lựa chọn đơn vị triển khai phần mềm quản lý tòa nhà phù hợp
+                            </h1>
+                            <div class="container__news-info-time">
+                                <i class="container__news-info-time-icon fas fa-calendar-day"></i>
+                                01/11/2021
                             </div>
                         </header>
-                        <div class="container__item-wrap container__item-manage-data-sheet-wrap reveal">
-                            <div class="container__table-data">
-                                <header class="container__table-data-header">
-                                    <ul class="container__table-data-header-list">
-                                        <li class="container__table-data-header-item">
-                                            <div class="container__table-data-header-name">
-                                                <input type="checkbox" name="" id="container__table-data-header-checkbox" >
-                                            </div>
-                                            <div class="container__table-data-header-search hidden-pc-tablet">
-                                                <i class="container__table-data-header-search-icon fas fa-search"></i>
-                                                <input type="text" name="" placeholder="Tìm kiếm" class="container__table-data-header-search-input">
-                                            </div>
-                                        </li>
-                                        <li class="container__table-data-header-item">
-                                            <span class="container__table-data-header-name">Loại phí</span>
-                                            <div class="container__table-data-header-search hidden-pc-tablet">
-                                                <i class="container__table-data-header-search-icon fas fa-search"></i>
-                                                <input type="text" name="" placeholder="Tìm kiếm" class="container__table-data-header-search-input">
-                                            </div>
-                                        </li>
-                                        <li class="container__table-data-header-item">
-                                            <span class="container__table-data-header-name">Diễn giải</span>
-                                            <div class="container__table-data-header-search hidden-pc-tablet">
-                                                <i class="container__table-data-header-search-icon fas fa-search"></i>
-                                                <input type="text" name="" placeholder="Tìm kiếm" class="container__table-data-header-search-input">
-                                            </div>
-                                        </li>
-                                        <li class="container__table-data-header-item">
-                                            <span class="container__table-data-header-name">Phải thu</span>
-                                            <div class="container__table-data-header-search hidden-pc-tablet">
-                                                <i class="container__table-data-header-search-icon fas fa-search"></i>
-                                                <input type="text" name="" placeholder="Tìm kiếm" class="container__table-data-header-search-input">
-                                            </div>
-                                        </li>
-                                        <li class="container__table-data-header-item">
-                                            <span class="container__table-data-header-name">Đã thu</span>
-                                            <div class="container__table-data-header-search hidden-pc-tablet">
-                                                <i class="container__table-data-header-search-icon fas fa-search"></i>
-                                                <input type="text" name="" placeholder="Tìm kiếm" class="container__table-data-header-search-input">
-                                            </div>
-                                        </li>
-                                        <li class="container__table-data-header-item">
-                                            <span class="container__table-data-header-name">Còn nợ	</span>
-                                            <div class="container__table-data-header-search hidden-pc-tablet">
-                                                <i class="container__table-data-header-search-icon fas fa-search"></i>
-                                                <input type="text" name="" placeholder="Tìm kiếm" class="container__table-data-header-search-input">
-                                            </div>
-                                        </li>
-                                        <li class="container__table-data-header-item">
-                                            <span class="container__table-data-header-name">Trạng thái</span>
-                                            <div class="container__table-data-header-search hidden-pc-tablet">
-                                                <i class="container__table-data-header-search-icon fas fa-search"></i>
-                                                <input type="text" name="" placeholder="Tìm kiếm" class="container__table-data-header-search-input">
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </header>
-                                <div class="container__table-data-body">
-                                    <span>Không có dữ liệu</span>
+                        <div class="container__news-info-body">
+                            <div class="container__news-info-body-desc">
+                                Việc ứng dụng phần mềm vào quản lý tòa nhà đang là xu thế quản lý tất yếu hiện nay. Nhất là khi nhu cầu môi trường sống của người dân tăng cao, yêu cầu chất lượng dịch vụ quản lý vận hành tòa nhà ngày càng nghiêm ngặt.
+                            </div>
+                            <p> Tuy nhiên để số hóa thành công bộ máy quản lý vận hành cho tòa nhà thì việc lựa chọn một đơn vị triển khai phần mềm uy tín và chất lượng là điều hết sức cần thiết. Vậy đâu là tiêu chí để chọn lựa đơn vị triển khai phần mềm phù hợp với tòa nhà của bạn? Tất cả đều có câu trả lời trong bài viết dưới đây.</p>
+                            <div class="container__news-info-body-desc">
+                                1. Đơn vị phát triển phần mềm quản lý tòa nhà phải đảm bảo được năng lực
+                            </div>
+                            <p>Một trong những tiêu chí quan trọng cần chú ý khi lựa chọn đơn vị phát triển phần mềm quản lý tòa nhà chính là năng lực của nhà cung cấp. Tức là khi bạn muốn tìm kiếm đơn vị phát triển phần mềm quản lý cho tòa nhà của mình, chúng ta cần phải tìm hiểu kỹ về năng lực của nhà phát triển phần mềm, so sánh năng lực, đối tác triển khai cũng như những khách hàng triển khai thành công của nhà phát triển để tìm ra nhà cung cấp phần mềm tốt nhất.</p>
+                            <p>Điều quan trọng là chúng ta cần phải tham khảo thêm các dự án mà nhà phát triển phần mềm đó đã từng triển khai cho các tòa nhà khác ra sao để lựa chọn được đối tác uy tín.</p>
+                            <p>Những đơn vị phát triển phần mềm uy tín như DIP Việt Nam thường được đánh giá là đơn vị phát triển phần mềm quản lý tòa nhà uy tín, chất lượng và đã có kinh nghiệm lâu năm, triển khai cho hàng trăm tòa nhà với đủ mọi quy mô, đặc thù khác nhau luôn được xem là sự lựa chọn hàng đầu</p>
+                            <img src="https://dip.vn/Content/Images/5-tieu-chi-chon-don-vi-phan-mem-quan-ly-toa-nha-tot-1.jpg" alt="">
+                            <a href=""><i class="fas fa-arrow-right"></i> Phần mềm CRM Plus giúp bất động sản GIC nâng cao quản lý nội bộ tốt hơn</a>
+                            <div class="container__news-info-body-desc">
+                                2. Phần mềm quản lý tòa nhà phải  có công nghệ tiên tiến
+                            </div>
+                            <p>Khi công nghệ không ngừng phát triển, các giải pháp phần mềm quản lý tòa nhà mà đơn vị của bạn đang dùng cũng phải đảm bảo đáp ứng được các yêu cầu về công nghệ tối thiểu. Định hướng trước được nền tảng công nghệ hiện đại cũng sẽ giúp tòa nhà của bạn tìm kiếm được giải pháp phần mềm phù hợp nhất.</p>
+                            <p>Trước hàng loạt các giải pháp phần mềm quản lý vận hành tòa nhà khá “choáng ngợp” trên thị trường như hiện nay thì một giải pháp phần mềm được phát triển từ nền tảng công nghệ tiên tiến, có khả năng bảo mật cao và có nhiều tính năng tiện ích chính là thước đo chuẩn mực để tòa nhà của bạn tìm chọn được giải pháp phần mềm phù hợp, cũng như tìm được đơn vị phát triển phần mềm uy tín và chất lượng.</p>
+                            <p>Một đơn vị phát triển phần mềm tốt và chất lượng sẽ có sẵn được những giải pháp quản lý cũng như nền tảng công nghệ phù hợp với đặc thù, nhu cầu của từng tòa nhà. Đây cũng là lý do khi tìm chọn giải pháp phần mềm quản lý cho tòa nhà, chúng ta nên lên sẵn những yêu cầu, thực trạng tòa nhà để đơn vị phát triển phần mềm có thể chắc chắn đáp ứng được nhu cầu quản lý mà tòa nhà của bạn đang cần.</p>
+                            <div class="container__news-info-body-desc">
+                                3. Cần phải có chính sách hỗ trợ tốt từ đơn vị phát triển phần mềm
+                            </div>
+                            <p>Một tiêu chí khác cần chú ý khi tìm chọn đơn vị phát triển phần mềm quản lý uy tín và chất lượng cho tòa nhà của bạn chính là những chính sách hỗ trợ mà doanh nghiệp đó có thể đáp ứng cho tòa nhà.                            </p>
+                            <p>Trong đó những đơn vị phát triển phần mềm uy tín như DIP Việt Nam thường có những chính sách hỗ trợ đầy đủ bao gồm: Tư vấn giải pháp quản lý phù hợp theo đặc thù từng tòa nhà hay dự án, chính sách hỗ trợ triển khai và tranning ứng dụng phần mềm, chính sách bảo hành và bảo trì phần mềm cho từng dự án.</p>
+                            <p></p>
+                            <div class="container__news-info-body-desc">
+                                + Tư vấn giải pháp quản lý
+                            </div>
+                            <p>Một đơn vị phát triển phần mềm chuyên nghiệp, uy tín và giàu kinh nghiệm luôn cần tìm hiểu trước mọi nhu cầu quản lý, đặc thù dự án cũng như quy mô tòa nhà hay dự án của bạn trước, sau đó mới xác định được giải pháp phần mềm quản lý vận hành nào sẽ phù hợp nhất với tòa nhà mà bạn đang cần quản lý.                            </p>
+                            <p>Theo đó đội ngũ tư vấn sẽ đánh giá quy mô tòa nhà, quy trình vận hành tòa nhà, đặc thù của tòa nhà cho tới đội ngũ nhân sự trong tòa nhà cùng nhu cầu khách hàng đang cần để tư vấn một giải pháp quản lý vận hành phù hợp nhất. Điều này sẽ giúp khách hàng hiểu rõ hơn về phần mềm cũng như đưa ra được quyết định chính xác.</p>
+                            <div class="container__news-info-body-desc">
+                                + Hỗ trợ triển khai phần mềm
+                            </div>
+                            <p>Đối với những đơn vị phát triển phần mềm quản lý vận hành uy tín, họ thường có những chính sách hỗ trợ triển khai và hướng dẫn ứng dụng phần mềm tỉ mỉ với quy trình rõ ràng, có hỗ trợ khách hàng 24/7 trong quá trình sử dụng phần mềm.                            </p>
+                            <p>Nhất là với các giải pháp phần mềm quản lý vận hành trong quá trình triển khai không thể tránh khỏi những vấn đề phát sinh như người dùng hiểu sai quy trình, lỗi phần mềm, nhân viên chưa nắm rõ cách dùng... Lúc này đội ngũ triển khai sẽ hỗ trợ người dùng online hay offline kịp thời và nhanh chóng nhất.</p>
+                            <img src="https://dip.vn/Content/Images/5-tieu-chi-chon-don-vi-phan-mem-quan-ly-toa-nha-tot-2.jpg" alt="">
+                            <div class="container__news-info-body-desc">
+                                + Có chính sách bảo hành
+                            </div>
+                            <p>Những đơn vị phát triển phần mềm quản lý tòa nhà uy tín và kinh nghiệm lâu năm như DIP Việt Nam luôn có những chính sách bảo hành và hỗ trợ khách hàng tối đa sau khi dự án kết thúc.                            </p>
+                            <p>Nhất là trong lĩnh vực quản lý vận hành tòa nhà, bất cứ khách hàng nào khi sử dụng phần mềm quản lý vận hành Landsoft Control của DIP Việt Nam đều được cam đoan bảo hành và bảo trì trong suốt quá trình sử dụng. Điều này có nghĩa khi sử dụng phần mềm, người dùng phát hiện bất cứ trục trặc hoặc lỗi sai từ phần mềm thì DIP Việt Nam đều có trách nhiệm sửa chữa và điều chỉnh kịp thời.</p>
+                            <div class="container__news-info-body-desc">
+                                4. Phần mềm quản lý vận hành phải có khả năng tùy biến, chỉnh sửa và mở rộng theo yêu cầu
+                            </div>
+                            <p>Một phần mềm quản lý vận hành tòa nhà tốt luôn phải đảm bảo khả năng tùy biến và mở rộng dễ dàng theo yêu cầu của người dùng.</p>
+                            <p>Nhất là với đặc thù ngành quản lý vận hành tòa nhà, khi mỗi một tòa nhà, một dự án đều có quy mô và quy trình vận hành khác nhau, yêu cầu tính năng cũng như hoạt động cũng không giống nhau. Bên cạnh đó, trong quá trình sử dụng đơn vị quản lý vận hành cũng có thể yêu cầu thêm tính năng hoặc mở rộng quy mô quản lý, lúc này phần mềm cần phải đáp ứng được tất cả những yêu cầu trên để có thể phục vụ công việc quản lý vận hành tốt nhất.                            </p>
+                            <p>Trong đó các giải pháp quản lý vận hành tòa nhà chuyên nghiệp như Landsoft Control do DIP Việt Nam phát triển luôn có thể đảm bảo đáp ứng được đầy đủ những yêu cầu này. Khi sử dụng phần mềm Landsoft Control, người dùng có thể đưa ra những danh sách nhu cầu để đội ngũ kỹ thuật phát triển hệ thống phần mềm phù hợp.</p>
+                            <p>Hơn nữa, đội ngũ tư vấn, triển khai tại DIP Việt Nam cũng sẽ đưa ra những tư vấn phù hợp và tìm kiếm giải pháp nâng cao đối với các yêu cầu mà khách hàng đề xuất.</p>
+                            <p>Có thể nói, giải pháp quản lý vận hành tòa nhà Landsoft Control của DIP Việt Nam chính là phương án quản lý vận hành tòa nhà thích hợp, linh động với khả năng tùy biến cao, có thể đáp ứng được yêu cầu từ người dùng.Điều này hoàn toàn vượt trội hơn so với các hệ thống phần mềm quản lý thông thường không thể nâng cấp và tùy chỉnh, nhất là khi công nghệ không ngừng thay đổi, nhiều giải pháp phần mềm khó có thể linh động theo kịp được sự thay đổi của các chế độ, chính sách và cơ chế quản lý của hệ thống tòa nhà tại Việt Nam vốn thay đổi hàng năm.</p>
+                            <p>Chọn đúng đơn vị phát triển phần mềm cùng giải pháp phần mềm phù hợp đồng nghĩa với việc chọn một đối tác sẽ giúp tòa nhà tối ưu quản lý vận hành phần nền tảng, hỗ trợ đào tạo, giúp giảm bớt quá trình chuyển đổi, xử lý rủi ro gặp phải và luôn đồng hành cho đến khi quá trình chuyển đổi hoàn tất.</p>
+                            <img src="https://dip.vn/Content/Images/banner%20chung%20cu.jpg" alt="">
+                            <a href="./news-3.html"><i class="fas fa-arrow-right"></i> CRM Plus - Giải pháp giúp bất động sản GIC số hóa bộ máy quản lý và tối ưu chăm sóc khách hàng</a>
+                        </div>
+                    </div>
+                    
+                    <!-- News More -->
+                    <div class="container__news-info-more-wrap">
+                        <h2 class="container__news-info-more-heading">Tin Tức Mới Nhất</h2>
+    
+                        <div class="container__news-info-more-list">
+                            <div class="container__news-info-more-item">
+                                <a href="news-1.html">
+                                    <img src="https://dip.vn/Content/Images/dong-duong-land-nang-cap-quan-ly-kinh-doanh-du-an-Golden-City-2.jpg" alt="">
+                                </a>
+                                <div class="container__news-info-more-content">
+                                    <a href="news-1.html" class="container__news-info-more-text">ĐÔNG DƯƠNG LAND VỚI MỤC ĐÍCH SỐ HÓA QUẢN LÝ DỰ ÁN GOLDEN CITY TRÊN DI ĐỘNG
+                                    </a>
+                                    <div class="container__news-info-more-day">
+                                        <span>19-01-2021</span><a href="news-2.html">Xem thêm</a>
+                                    </div>
                                 </div>
-                                <footer class="container__table-data-footer">
-                                    <span class="container__table-data-total">Tổng thanh toán: </span><span class="container__table-data-total-number">0 đ</span>
-                                </footer>
                             </div>
-                            <div class="btn-data-table-wrap">
-                                <button class="btn btn-data-table">Xem</button>
-                                <button onclick="handleMenuPay(event)" class="btn btn-data-table">
-                                    Thanh toán <i class="navbar__menu-item-icon fas fa-chevron-down"></i>
-                                    <ul class="pay-list">
-                                        <li class="pay-item">
-                                            <a href="#" class="pay-item-link">
-                                                <img src="./assets/images/Logo-VNPAY-QR.png" alt="" class="pay-item-img">
-                                            </a>
-                                            <div class="pay-item-des">
-                                                <span>Thanh toán hóa đơn qua VNPay</span>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </button>
+                            <div class="container__news-info-more-item">
+                                <a href="news-3.html">
+                                    <img src="https://dip.vn/UPLOAD/Buildings/Demo/Upload/crm-plus-so-hoa-quan-ly-cham-soc-khach-hang-gic-2.jpg" alt="">
+                                </a>
+                                <div class="container__news-info-more-content">
+                                    <a href="news-3.html" class="container__news-info-more-text">CRM Plus - Giải pháp giúp bất động sản GIC số hóa bộ máy quản lý và tối ưu chăm sóc khách hàng</a>
+                                    <div class="container__news-info-more-day">
+                                        <span>25/01/2021</span><a href="news-3.html">Xem thêm</a>
+                                    </div>
+                                </div>
                             </div>
+                            
                         </div>
                     </div>
                 </div>
-            </div>            
-        </div>
+
+                <!-- Comment News -->
+                <div class="container__news-commnet-wrap">
+                    <h2 class="container__news-commnet-heading">
+                        Bình luận:
+                    </h2>
+                    <div class="container__commnet-box-news"></div>
+                    <div class="container__news-commnet-header">
+                        <img src="./assets/images/user-feedback.png" alt="">
+                        <textarea name="" placeholder="Nhập bình luận" class="container__news-commnet-input" ></textarea>
+                        <button class="btn container__news-commnet-btn">Gửi bình luận</button>
+                    </div>
+                </div>
+            </div>
+        </div>            
+       
 
         <!-- FOOTER SECTION -->
         <footer class="footer">
@@ -415,6 +384,14 @@
                 </div>
         </footer>
     </div>
+
+    <!-- Messenger Plugin chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+    
     <!-- Type It -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/7.0.4/typeit.min.js"></script>
@@ -423,8 +400,68 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.2/dist/chart.min.js"></script>
     <script src="./assets/js/app.js"></script>
-    <script src="./assets/js/hoadon.js"></script>
+    <script>
+        var CommnetsNews2Api = 'https://61b2c414c8d4640017aaf4da.mockapi.io/api/commentNews2Ai'
 
+        function start() {
+            getDataComment(renderDataComment)
+
+            handleCreateComment()
+        }
+        start()
+
+        function resestInput() {
+            document.querySelector('.container__news-commnet-input').value = ''
+        }
+
+        function getDataComment(callback) {
+            fetch(CommnetsNews2Api)
+                .then(res => res.json())
+                .then(callback)
+        }
+
+        function CreateComment(data, callback) {
+            var options = {
+                method: 'POST',
+                headers: {
+                    'content-type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            }
+            fetch(CommnetsNews2Api, options)
+                .then(res=> res.json())
+                .then(callback)
+        }
+
+        function renderDataComment(dataComments) {
+            var html = ''
+            dataComments.forEach((dataComment)=> {
+                return html +=`<div class="container__commnet-news-box-body-item">
+                    <img src="./assets/images/user-feedback.png" class="container__commnet-news-box-body-img">
+                    <div class="container__commnet-news-box-body-item-content-wrap">
+                        <h2>Admin</h2>
+                        <p class="container__commnet-news-box-body-item-content">${dataComment.content}</p>
+                    </div>
+                </div>`
+            })
+            document.querySelector('.container__commnet-box-news').innerHTML = html
+        }
+
+        function handleCreateComment() {
+            var createBtn = document.querySelector('.container__news-commnet-btn')
+            createBtn.onclick = function() {
+                var contentComment = document.querySelector('.container__news-commnet-input').value
+
+                var data = {
+                    content: contentComment
+                }
+                CreateComment(data, ()=> {
+                    getDataComment(renderDataComment)
+                    resestInput()
+                })
+            }
+        }
+    </script>
 </body>
 
 </html>

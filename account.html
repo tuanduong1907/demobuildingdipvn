@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./assets/css/hoadon.css">
     <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/account.css">
 </head>
 
 <body>
@@ -20,6 +20,7 @@
         <!-- HEADER SECTION -->
         <header class="header">
             <div class="grid">
+
                 <!-- Nav PC -->
                 <div class="navbar hidden-pc"> 
                     <a href="./home.html" class="navbar__logo-wrap hidden-pc">
@@ -27,12 +28,12 @@
                         <span id="type1"></span>
                     </a>
                     <ul class="navbar__menu-list">
-                        <li class="navbar__menu-item ">
+                        <li class="navbar__menu-item">
                             <a href="./home.html" class="navbar__menu-item-link">
                                 Trang chủ
                             </a>
                         </li>
-                        <li class="navbar__menu-item navbar__menu-item--actived">
+                        <li class="navbar__menu-item">
                             <a href="./hoadon.html" class="navbar__menu-item-link">Hóa đơn</a>
                         </li>
                         <li class="navbar__menu-item">
@@ -44,19 +45,19 @@
                                 <i class="navbar__menu-item-icon fas fa-chevron-down"></i>
                             </a>
                             <ul class="navbar__sub-menu-list">
-                                <li class="navbar__sub-menu-item">
+                                <li class="navbar__sub-menu-item" style="font-weight: 500;">
                                     <a href="./bieudodien.html" class="navbar__sub-menu-link">
                                         <i class="navbar__sub-menu-icon fas fa-lightbulb"></i>
                                         Chỉ số tiêu thụ diện
                                     </a>
                                 </li>
-                                <li class="navbar__sub-menu-item">
+                                <li class="navbar__sub-menu-item" style="font-weight: 500;">
                                     <a href="./bieudonuoc.html" class="navbar__sub-menu-link">
                                         <i class="navbar__sub-menu-icon fas fa-tint"></i>
                                         Chỉ số tiêu nước
                                     </a>
                                 </li>
-                                <li class="navbar__sub-menu-item">
+                                <li class="navbar__sub-menu-item" style="font-weight: 500;">
                                     <a href="./bieudoxe.html" class="navbar__sub-menu-link">
                                         <i class="navbar__sub-menu-icon fas fa-address-book"></i>
                                         Thống kê số lượng xe
@@ -133,13 +134,13 @@
                     <i class="navbar__mobile-close-icon fas fa-times"></i>
                 </label>
                 <ul class="navbar__mobile-menu-list">
-                    <li class="navbar__mobile-menu-item">
+                    <li class="navbar__mobile-menu-item navbar__mobile-menu-item--actived">
                         <a href="./home.html" class="navbar__mobile-menu-item-link">
                             Trang chủ
                             <i class="navbar__mobile-menu-icon fas fa-home"></i>
                         </a>
                     </li>
-                    <li class="navbar__mobile-menu-item navbar__mobile-menu-item--actived">
+                    <li class="navbar__mobile-menu-item">
                         <a href="./hoadon.html" class="navbar__mobile-menu-item-link">Hóa đơn</a>
                     </li>
                     <li class="navbar__mobile-menu-item">
@@ -179,6 +180,7 @@
                         <a href="./contact.html" class="navbar__mobile-menu-item-link">Liên hệ</a>
                     </li>
                 </ul>
+
                 
                 <!-- Menu Account Mobile -->
                 <ul class="navbar__mobile-menu-list">
@@ -208,156 +210,69 @@
                 <span> 028 7106 9079 </span>
             </div>
         </div>
-        <!-- --- CONTAINER ----- -->
-        <div class="container-manage">
-            <div class="grid container-wrap">
-                <h3 class="container__heading-manage">Hóa Đơn Tháng 12:</h3>
-                <div class="container__list">
-                    <div class="container__item-manage col-3 col-2-tablet col-1-mobile ">
-                        <div class="container__item-manage-data">
-                            <i class="container__item-manage-data-icon icon-recrept--1 fas fa-file-invoice"></i>
-                            <div class="container__item-manage-data-number counter" data-target="34"></div>
-                        </div>
-                        <div class="container__item-manage-footer">
-                            <a href="#data-sheet-receipt" class="container__item-manage-view">Xem chi tiết</a>
-                            <p class="container__item-manage-total">Tổng hóa đơn phát sinh</p>
-                        </div>
-                    </div>
-                    <div class="container__item-manage col-3 col-2-tablet col-1-mobile">
-                        <div class="container__item-manage-data">
-                            <i class="container__item-manage-data-icon icon-recrept--2 fas fa-file-invoice-dollar"></i>
-                            <div class="container__item-manage-data-number counter" data-target="52"></div>
-                        </div>
-                        <div class="container__item-manage-footer">
-                            <a href="#data-sheet-receipt" class="container__item-manage-view">Xem chi tiết</a>
-                            <p class="container__item-manage-total">Tổng hóa đơn thanh toán</p>
-                        </div>
-                    </div>
 
-                    <div class="container__item-manage col-3 col-2-tablet col-1-mobile">
-                        <div class="container__item-manage-data">
-                            <i class="container__item-manage-data-icon icon-recrept--3 fas fa-file-invoice-dollar"></i>
-                            <div class="container__item-manage-data-number counter" data-target="26"></div>
+        <!-- CONTAINER SECTION -->
+        <div class="container container-chart">
+            <div class="grid">
+                <!-- Chart Section -->
+                <div class="container__user-wrap">
+                    <header class="container__user-header">
+                        <h2 class="container__user-heading">
+                            <i class="fas fa-address-book"></i>
+                            Thông Tin Tài Khoản
+                        </h2>
+                    </header>
+                    <div class="container__user-body">
+                        <div class="container__user-item">
+                            <p class="container__user-item-name">Tên khách hàng:</p>
+                            <input type="text" value="Admin" class="container__user-item-input">
                         </div>
-                        <div class="container__item-manage-footer">
-                            <a href="#data-sheet-receipt" class="container__item-manage-view">Xem chi tiết</a>
-                            <p class="container__item-manage-total">Tổng hóa đơn chưa thanh toán</p>
+
+                        <div class="container__user-item">
+                            <p class="container__user-item-name">User:</p>
+                            <input type="text" disabled value="admin" class="container__user-item-input" style="background-color: #E9ECEF;">
                         </div>
-                    </div>                    
+
+                        <div class="container__user-item">
+                            <p class="container__user-item-name">Loại:</p>
+                            <input type="text" disabled value="Khách hàng" class="container__user-item-input"  style="background-color: #E9ECEF;">
+                        </div>
+
+                        <div class="container__user-item">
+                            <p class="container__user-item-name">Email:</p>
+                            <input type="text" value="sales@dip.vn" class="container__user-item-input">
+                        </div>
+
+                        <div class="container__user-item container__user-item-change-password">
+                            <input type="checkbox" name="" id="change-password-input" class="container__user-checkbox-input" onclick="handleShowChangePassword(event)">
+                            <span onclick="handleShowChangePassword(event)" class="container__user-item-name-checkbox">
+                                Đổi mật khẩu
+                            </span>
+                        </div>
+
+                        <div class="container__change-password">
+                            <div class="container__change-password-item">
+                                <p class="container__change-password-name">Mật khẩu cũ</p>
+                                <input type="password" class="container__change-password-input">                                
+                            </div>
+
+                            <div class="container__change-password-item">
+                                <p class="container__change-password-name">Mật khẩu mới</p>
+                                <input type="password" class="container__change-password-input">                                
+                            </div>
+
+                            <div class="container__change-password-item">
+                                <p class="container__change-password-name">Nhập lại mật khẩu mới</p>
+                                <input type="password" class="container__change-password-input">                                
+                            </div>
+                        </div>
+                        <button class="btn btn-change-password">Cập nhật</button>
+                    </div>
                 </div>
 
-                <div class="container__data-sheet-wrap" id="data-sheet-receipt">
-                    <h3 class="container__heading-manage">Chi Tiết Hóa Đơn:</h3>
-                    <div class="container__data-sheet">
-                        <header class="container__data-sheet-header">
-                            <div class="container__data-sheet-header-item">
-                                <p class="container__data-sheet-header-text">
-                                    Tháng / Month
-                                </p>
-                                <input type="number" max="12" min="1" class="container__data-sheet-header-input">
-                            </div>
-                            <div class="container__data-sheet-header-item">
-                                <p class="container__data-sheet-header-text">
-                                    Name / Year
-                                </p>
-                                <input type="number" max="2099" min="2000" class="container__data-sheet-header-input">
-                            </div>
-                            <div class="container__data-sheet-header-item">
-                                <p class="container__data-sheet-header-text">
-                                    Trạng thái
-                                </p>
-                                <select name="" class="container__data-sheet-status">
-                                    <option value="1">--All--</option>
-                                    <option value="2">Chưa thanh toán</option>
-                                    <option value="3">Đã thanh toán</option>
-                                </select>
-                            </div>
-                        </header>
-                        <div class="container__item-wrap container__item-manage-data-sheet-wrap reveal">
-                            <div class="container__table-data">
-                                <header class="container__table-data-header">
-                                    <ul class="container__table-data-header-list">
-                                        <li class="container__table-data-header-item">
-                                            <div class="container__table-data-header-name">
-                                                <input type="checkbox" name="" id="container__table-data-header-checkbox" >
-                                            </div>
-                                            <div class="container__table-data-header-search hidden-pc-tablet">
-                                                <i class="container__table-data-header-search-icon fas fa-search"></i>
-                                                <input type="text" name="" placeholder="Tìm kiếm" class="container__table-data-header-search-input">
-                                            </div>
-                                        </li>
-                                        <li class="container__table-data-header-item">
-                                            <span class="container__table-data-header-name">Loại phí</span>
-                                            <div class="container__table-data-header-search hidden-pc-tablet">
-                                                <i class="container__table-data-header-search-icon fas fa-search"></i>
-                                                <input type="text" name="" placeholder="Tìm kiếm" class="container__table-data-header-search-input">
-                                            </div>
-                                        </li>
-                                        <li class="container__table-data-header-item">
-                                            <span class="container__table-data-header-name">Diễn giải</span>
-                                            <div class="container__table-data-header-search hidden-pc-tablet">
-                                                <i class="container__table-data-header-search-icon fas fa-search"></i>
-                                                <input type="text" name="" placeholder="Tìm kiếm" class="container__table-data-header-search-input">
-                                            </div>
-                                        </li>
-                                        <li class="container__table-data-header-item">
-                                            <span class="container__table-data-header-name">Phải thu</span>
-                                            <div class="container__table-data-header-search hidden-pc-tablet">
-                                                <i class="container__table-data-header-search-icon fas fa-search"></i>
-                                                <input type="text" name="" placeholder="Tìm kiếm" class="container__table-data-header-search-input">
-                                            </div>
-                                        </li>
-                                        <li class="container__table-data-header-item">
-                                            <span class="container__table-data-header-name">Đã thu</span>
-                                            <div class="container__table-data-header-search hidden-pc-tablet">
-                                                <i class="container__table-data-header-search-icon fas fa-search"></i>
-                                                <input type="text" name="" placeholder="Tìm kiếm" class="container__table-data-header-search-input">
-                                            </div>
-                                        </li>
-                                        <li class="container__table-data-header-item">
-                                            <span class="container__table-data-header-name">Còn nợ	</span>
-                                            <div class="container__table-data-header-search hidden-pc-tablet">
-                                                <i class="container__table-data-header-search-icon fas fa-search"></i>
-                                                <input type="text" name="" placeholder="Tìm kiếm" class="container__table-data-header-search-input">
-                                            </div>
-                                        </li>
-                                        <li class="container__table-data-header-item">
-                                            <span class="container__table-data-header-name">Trạng thái</span>
-                                            <div class="container__table-data-header-search hidden-pc-tablet">
-                                                <i class="container__table-data-header-search-icon fas fa-search"></i>
-                                                <input type="text" name="" placeholder="Tìm kiếm" class="container__table-data-header-search-input">
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </header>
-                                <div class="container__table-data-body">
-                                    <span>Không có dữ liệu</span>
-                                </div>
-                                <footer class="container__table-data-footer">
-                                    <span class="container__table-data-total">Tổng thanh toán: </span><span class="container__table-data-total-number">0 đ</span>
-                                </footer>
-                            </div>
-                            <div class="btn-data-table-wrap">
-                                <button class="btn btn-data-table">Xem</button>
-                                <button onclick="handleMenuPay(event)" class="btn btn-data-table">
-                                    Thanh toán <i class="navbar__menu-item-icon fas fa-chevron-down"></i>
-                                    <ul class="pay-list">
-                                        <li class="pay-item">
-                                            <a href="#" class="pay-item-link">
-                                                <img src="./assets/images/Logo-VNPAY-QR.png" alt="" class="pay-item-img">
-                                            </a>
-                                            <div class="pay-item-des">
-                                                <span>Thanh toán hóa đơn qua VNPay</span>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>            
-        </div>
+            </div>
+        </div>            
+       
 
         <!-- FOOTER SECTION -->
         <footer class="footer">
@@ -415,6 +330,14 @@
                 </div>
         </footer>
     </div>
+
+    <!-- Messenger Plugin chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+    
     <!-- Type It -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/7.0.4/typeit.min.js"></script>
@@ -423,8 +346,14 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.2/dist/chart.min.js"></script>
     <script src="./assets/js/app.js"></script>
-    <script src="./assets/js/hoadon.js"></script>
+    <script>
 
+        function handleShowChangePassword(event) {
+            event.stopPropagation();
+            document.querySelector('.container__change-password').classList.toggle('active')
+        }
+
+    </script>
 </body>
 
 </html>

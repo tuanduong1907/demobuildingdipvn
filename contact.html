@@ -102,9 +102,9 @@
                                 </ul>
                             </li>
                             <li class="navbar__setting-item">
-                                <a href="#" class="navbar__setting-link">
+                                <a href="./account.html" class="navbar__setting-link">
                                     <i class="navbar__setting-item-icon fas fa-key"></i>
-                                    Đổi mật khẩu
+                                    Cài đặt
                                 </a>
                             </li>
                             <li class="navbar__setting-item">
@@ -180,6 +180,22 @@
                         <a href="./contact.html" class="navbar__mobile-menu-item-link">Liên hệ</a>
                     </li>
                 </ul>
+                
+                <!-- Menu Account Mobile -->
+                <ul class="navbar__mobile-menu-list">
+                    <li class="navbar__mobile-menu-item">
+                        <a href="./account.html" class="navbar__mobile-menu-item-link">
+                            Cài đặt
+                            <i class="navbar__mobile-menu-icon fas fa-user-cog"></i>
+                        </a>
+                    </li>
+                    <li class="navbar__mobile-menu-item">
+                        <a href="./login.html" class="navbar__mobile-menu-item-link">
+                            Đăng xuất
+                            <i class="navbar__mobile-menu-icon fas fa-sign-out-alt"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
             
         </header>
@@ -210,7 +226,7 @@
                         </a>
                         <p class="container__contact-info-text">
                             <span class="container__contact-info-name">Địa chỉ:</span>
-                            Tầng 9, Tòa nhà VCN Tower, 02 Đường Tố Hữu, Phường Phước Hải, TP Nha Trang, Tỉnh Khánh Hòa.
+                            Tầng 9, Tòa nhà VCN Tower, 02 Đường Tố Hữu,Phước Hải, Nha Trang, Khánh Hòa.
                         </p>
                     </div>
 
@@ -318,35 +334,8 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.2/dist/chart.min.js"></script>
     <script src="./assets/js/app.js"></script>
 
-<!-- Messenger Plugin chat Code -->
-    <div id="fb-root"></div>
-
-    <!-- Your Plugin chat code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
-
     <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "1895724043980296");
-      chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
 
-    <!-- Your SDK code -->
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v12.0'
-        });
-      };
-
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
     </script>
 </body>
 

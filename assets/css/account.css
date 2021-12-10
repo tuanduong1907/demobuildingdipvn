@@ -1,0 +1,142 @@
+.container__user-wrap{
+    margin-top: 100px;
+    padding-top: 30px;
+    background-color: #ffff;
+    border-radius: 16px;
+    box-shadow: 0px 16px 24px rgb(0 0 0 / 8%);
+}
+
+.container__user-header{
+    height: 3.5rem;
+    border-bottom: 1px solid rgba(26,54,126,.125);
+}
+
+.container__user-heading{
+    padding-left: 20px;
+    color: var(--heading-color);
+    font-size: 2.2rem;
+}
+
+.container__user-body{
+    padding: 20px;
+}
+
+.container__user-item{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.container__user-item-name{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--text-color);
+    padding-right: 30px;
+    align-self: center;
+    max-width: 16.66667%;
+
+}
+
+
+.container__user-item-input{
+    width: 83.33333%;
+    padding: 8px 12px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    font-size: 1.4rem;
+    transition: .15s ease-in-out;
+    border-radius: 6px;
+}
+
+.container__change-password-input:focus,
+.container__user-item-input:focus {
+        color: #495057;
+        background-color: #fff;
+        border-color: #a9bcee;
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgb(37, 134, 208, .2);
+}
+
+
+.container__user-checkbox-input{
+    cursor: pointer;
+    margin-right: 10px;
+}
+.container__user-item-name-checkbox{
+    margin-right: auto;
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+
+
+
+.container__change-password{
+    display: none;
+}
+
+.container__change-password-item{
+    width: 33.3333%;
+}
+
+.container__change-password-item:nth-child(2) {
+    margin: 0 12px;
+}
+
+.container__change-password-name{
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+}
+
+.container__change-password-input{
+    width: 100%;
+    padding: 6px 12px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    font-size: 1.4rem;
+    transition: .15s ease-in-out;
+    border-radius: 6px;
+}
+
+.btn-change-password{
+    margin-top: 20px;
+}
+
+.container__change-password.active{
+    display: flex;
+    animation: fadeIn 1s ease;
+}
+
+
+/* Mobie: width < 740px */
+@media only screen and (max-width: 46.1875em) {
+    .container__change-password,
+    .container__user-item{
+        flex-direction: column;
+    }
+    .container__user-item-name{
+        max-width: 100%;
+        align-self: start;
+        margin-bottom: 8px;
+    }
+
+    .container__change-password-item,
+    .container__user-item-input{
+        width: 100%;
+    }
+
+    .container__user-item-change-password{
+        flex-direction: row;
+    }
+
+    .container__change-password-item:nth-child(2){
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+}
